@@ -55,14 +55,35 @@ a:hover
 @media only screen and (max-width: 687px)
 {
 }
-#Layer1
+#dhl_banner
+{
+   background-clip: padding-box;
+   background-color: transparent;
+   background-image: url('images/dhl_fundo.png');
+   background-repeat: no-repeat;
+   background-position: center center;
+   background-attachment: scroll;
+   background-size: cover;
+   border-radius: 0px;
+   box-shadow: 0px 5px 5px rgba(79,79,79,0.06);
+}
+#dhl_banner-overlay
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-image: linear-gradient(to top, #F4A460 0%, rgba(244,164,96,0.00) 100%);
+}
+#bg_banner
 {
    background-clip: padding-box;
    background-color: transparent;
    border-radius: 0px;
    box-shadow: 0px 5px 5px rgba(79,79,79,0.06);
 }
-#Layer1-overlay
+#bg_banner-overlay
 {
    position: absolute;
    top: 0;
@@ -71,7 +92,7 @@ a:hover
    left: 0;
    background-image: linear-gradient(to top, #FF8C00 0%, rgba(255,140,0,0.00) 100%);
 }
-#Layer1-video
+#bg_banner-video
 {
    background: #000000;
    position: absolute;
@@ -82,7 +103,7 @@ a:hover
    overflow: hidden;
    z-index: -99;
 }
-#Layer1-video iframe
+#bg_banner-video iframe
 {
    pointer-events: none;
    position: absolute;
@@ -146,11 +167,18 @@ a:hover
    border-radius: 0px;
    padding: 0;
    margin: 0;
-   text-align: justify;
+   text-align: left;
+}
+#wb_Text3
+{
+   color: #F6F6F6;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 20px;
 }
 #wb_Text3 div
 {
-   text-align: justify;
+   text-align: left;
 }
 #ThemeableButton2
 {
@@ -300,6 +328,70 @@ a:hover
    margin: 0;
    text-align: left;
    text-transform: none;
+}
+#wb_Text6 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text6
+{
+   color: #333333;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 20px;
+}
+#wb_Text6 div
+{
+   text-align: center;
+}
+#wb_Image6
+{
+   vertical-align: top;
+}
+#Image6
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text7 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text7 div
+{
+   text-align: center;
+}
+#wb_Text8 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text8 div
+{
+   text-align: left;
 }
 #wb_CssMenu1
 {
@@ -1269,7 +1361,7 @@ a:hover
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 20;
+   z-index: 24;
 }
 #wb_CssMenu1
 {
@@ -1278,17 +1370,17 @@ a:hover
    top: 15px;
    width: 620px;
    height: 39px;
-   z-index: 18;
+   z-index: 22;
 }
 #RollOver6
 {
    position: absolute;
    left: 1566px;
-   top: 136px;
+   top: 342px;
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 12;
+   z-index: 16;
 }
 #lg_rodape_Container
 {
@@ -1314,7 +1406,7 @@ a:hover
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 23;
+   z-index: 27;
 }
 #wb_OverlayMenu1
 {
@@ -1324,7 +1416,7 @@ a:hover
    width: 56px;
    height: 49px;
    visibility: hidden;
-   z-index: 19;
+   z-index: 23;
 }
 #wb_Image1
 {
@@ -1333,17 +1425,17 @@ a:hover
    top: 10px;
    width: 209px;
    height: 36px;
-   z-index: 17;
+   z-index: 21;
 }
 #RollOver4
 {
    position: absolute;
    left: 1668px;
-   top: 136px;
+   top: 342px;
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 13;
+   z-index: 17;
 }
 #wb_Text4
 {
@@ -1353,35 +1445,35 @@ a:hover
    width: 213px;
    height: 36px;
    text-align: center;
-   z-index: 8;
+   z-index: 12;
 }
 #wb_Image2
 {
    position: absolute;
    left: 347px;
-   top: 52px;
+   top: 4px;
    width: 386px;
    height: 246px;
-   z-index: 2;
+   z-index: 6;
 }
 #RollOver5
 {
    position: absolute;
    left: 1515px;
-   top: 138px;
+   top: 344px;
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 11;
+   z-index: 15;
 }
 #wb_Text5
 {
    position: absolute;
    left: 221px;
-   top: 130px;
+   top: 336px;
    width: 415px;
    height: 18px;
-   z-index: 9;
+   z-index: 13;
 }
 #lg_rodape
 {
@@ -1391,7 +1483,7 @@ a:hover
    top: 1212px;
    width: 100%;
    height: 195px;
-   z-index: 26;
+   z-index: 31;
 }
 #wb_Image3
 {
@@ -1400,16 +1492,16 @@ a:hover
    top: 736px;
    width: 59px;
    height: 33px;
-   z-index: 4;
+   z-index: 8;
 }
 #wb_TextMenu1
 {
    position: absolute;
    left: 1345px;
-   top: 39px;
+   top: 245px;
    width: 356px;
    height: 28px;
-   z-index: 16;
+   z-index: 20;
 }
 #wb_Image4
 {
@@ -1418,16 +1510,54 @@ a:hover
    top: 44px;
    width: 189px;
    height: 153px;
-   z-index: 5;
+   z-index: 9;
+}
+#wb_Text6
+{
+   position: absolute;
+   left: 220px;
+   top: 119px;
+   width: 697px;
+   height: 67px;
+   text-align: center;
+   z-index: 0;
+}
+#dhl_banner_Container
+{
+   width: 1880px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#dhl_banner
+{
+   position: absolute;
+   text-align: center;
+   left: 0px;
+   top: 1124px;
+   width: 100%;
+   height: 304px;
+   z-index: 28;
 }
 #wb_Image5
 {
    position: absolute;
    left: 221px;
-   top: 29px;
+   top: 235px;
    width: 188px;
    height: 83px;
-   z-index: 10;
+   z-index: 14;
+}
+#wb_Text7
+{
+   position: absolute;
+   left: 374px;
+   top: 32px;
+   width: 426px;
+   height: 72px;
+   text-align: center;
+   z-index: 2;
 }
 #lg_navbar_Container
 {
@@ -1437,25 +1567,34 @@ a:hover
    margin-right: auto;
    text-align: left;
 }
+#wb_Image6
+{
+   position: absolute;
+   left: 1047px;
+   top: 31px;
+   width: 376px;
+   height: 236px;
+   z-index: 1;
+}
 #RollOver8
 {
    position: absolute;
    left: 1617px;
-   top: 136px;
+   top: 342px;
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 15;
+   z-index: 19;
 }
 #wb_Text1
 {
    position: absolute;
    left: 221px;
-   top: 157px;
+   top: 363px;
    width: 557px;
    height: 18px;
    text-align: center;
-   z-index: 14;
+   z-index: 18;
 }
 #ThemeableButton2
 {
@@ -1470,7 +1609,7 @@ a:hover
    width: 918px;
    height: 184px;
    text-align: center;
-   z-index: 7;
+   z-index: 11;
 }
 #lg_navbar
 {
@@ -1480,36 +1619,33 @@ a:hover
    top: 0px;
    width: 100%;
    height: 60px;
-   z-index: 27;
+   z-index: 32;
 }
 #wb_Text3
 {
    position: absolute;
    left: 870px;
-   top: 131px;
+   top: 83px;
    width: 697px;
    height: 89px;
-   text-align: justify;
-   z-index: 1;
+   z-index: 5;
 }
 #wb_bg_title
 {
    position: absolute;
-   left: 989px;
-   top: 72px;
+   left: 868px;
+   top: 19px;
    width: 417px;
    height: 36px;
-   z-index: 3;
+   z-index: 7;
 }
-#Layer1
+#bg_banner_Container
 {
-   position: absolute;
-   text-align: center;
-   left: 0px;
-   top: 828px;
-   width: 100%;
-   height: 394px;
-   z-index: 24;
+   width: 1880px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
 }
 #wb_Heading1
 {
@@ -1518,7 +1654,7 @@ a:hover
    top: 242px;
    width: 686px;
    height: 57px;
-   z-index: 6;
+   z-index: 10;
 }
 #RollOver2
 {
@@ -1528,7 +1664,7 @@ a:hover
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 21;
+   z-index: 25;
 }
 #lg_part1
 {
@@ -1538,16 +1674,16 @@ a:hover
    top: 0px;
    width: 100%;
    height: 797px;
-   z-index: 25;
+   z-index: 30;
 }
 #wb_ThemeableButton2
 {
    position: absolute;
    left: 1042px;
-   top: 256px;
+   top: 208px;
    width: 271px;
    height: 68px;
-   z-index: 0;
+   z-index: 4;
 }
 #RollOver3
 {
@@ -1557,15 +1693,26 @@ a:hover
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 22;
+   z-index: 26;
 }
-#Layer1_Container
+#wb_Text8
 {
-   width: 1880px;
-   position: relative;
-   margin-left: auto;
-   margin-right: auto;
-   text-align: left;
+   position: absolute;
+   left: 435px;
+   top: 231px;
+   width: 225px;
+   height: 36px;
+   z-index: 3;
+}
+#bg_banner
+{
+   position: absolute;
+   text-align: center;
+   left: 0px;
+   top: 828px;
+   width: 100%;
+   height: 304px;
+   z-index: 29;
 }
 @media only screen and (min-width: 1280px) and (max-width: 1879px)
 {
@@ -1574,20 +1721,46 @@ body
    background-color: #645600;
    background-image: none;
 }
-#Layer1
+#dhl_banner
 {
    left: 0px;
-   top: 730px;
-   height: 525px;
+   top: 1164px;
+   height: 393px;
    visibility: visible;
    display: block;
+   background-clip: padding-box;
+   background-color: transparent;
+   background-image: url('images/dhl_fundo.png');
+   background-repeat: no-repeat;
+   background-position: center top !important;
+   background-attachment: scroll;
+   background-size: cover;
    box-shadow: 0px 5px 5px #4F4F4F;
 }
-#Layer1
+#dhl_banner
 {
    width: 100%;
 }
-#Layer1_Container
+#dhl_banner_Container
+{
+   width: 1280px;
+}
+#bg_banner
+{
+   left: 0px;
+   top: 730px;
+   height: 434px;
+   visibility: visible;
+   display: block;
+   background-clip: padding-box;
+   background-color: transparent;
+   box-shadow: 0px 5px 5px #4F4F4F;
+}
+#bg_banner
+{
+   width: 100%;
+}
+#bg_banner_Container
 {
    width: 1280px;
 }
@@ -1626,7 +1799,7 @@ body
 #wb_Image2
 {
    left: 125px;
-   top: 183px;
+   top: 143px;
    width: 383px;
    height: 244px;
    visibility: visible;
@@ -1637,7 +1810,7 @@ body
 #wb_Text3
 {
    left: 620px;
-   top: 237px;
+   top: 197px;
    width: 544px;
    height: 112px;
    visibility: visible;
@@ -1645,13 +1818,15 @@ body
 }
 #wb_Text3
 {
+   font-size: 20px;
    margin: 0;
    padding: 0;
+   text-align: left;
 }
 #wb_ThemeableButton2
 {
-   left: 739px;
-   top: 410px;
+   left: 724px;
+   top: 340px;
    width: 271px;
    height: 68px;
    visibility: visible;
@@ -1683,8 +1858,8 @@ body
 }
 #wb_bg_title
 {
-   left: 675px;
-   top: 171px;
+   left: 620px;
+   top: 143px;
    width: 451px;
    height: 36px;
    visibility: visible;
@@ -1750,6 +1925,61 @@ body
    font-size: 43px;
    text-align: left;
    text-transform: none;
+}
+#wb_Text6
+{
+   left: 112px;
+   top: 197px;
+   width: 544px;
+   height: 89px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text6
+{
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Image6
+{
+   left: 781px;
+   top: 52px;
+   width: 383px;
+   height: 244px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text7
+{
+   left: 159px;
+   top: 97px;
+   width: 451px;
+   height: 72px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text7
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text8
+{
+   left: 276px;
+   top: 307px;
+   width: 216px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text8
+{
+   margin: 0;
+   padding: 0;
 }
 #wb_CssMenu1
 {
@@ -1842,7 +2072,7 @@ body
 #lg_rodape
 {
    left: 0px;
-   top: 1255px;
+   top: 1557px;
    height: 173px;
    visibility: visible;
    display: block;
@@ -2062,20 +2292,46 @@ body
    background-color: #645600;
    background-image: none;
 }
-#Layer1
+#dhl_banner
+{
+   left: 0px;
+   top: 1212px;
+   height: 396px;
+   visibility: visible;
+   display: block;
+   background-clip: padding-box;
+   background-color: transparent;
+   background-image: url('images/dhl_fundo.png');
+   background-repeat: no-repeat;
+   background-position: center top !important;
+   background-attachment: scroll;
+   background-size: cover;
+   box-shadow: 0px 5px 5px #4F4F4F;
+}
+#dhl_banner
+{
+   width: 100%;
+}
+#dhl_banner_Container
+{
+   width: 1024px;
+}
+#bg_banner
 {
    left: 0px;
    top: 730px;
    height: 482px;
    visibility: visible;
    display: block;
+   background-clip: padding-box;
+   background-color: transparent;
    box-shadow: 0px 5px 5px #4F4F4F;
 }
-#Layer1
+#bg_banner
 {
    width: 100%;
 }
-#Layer1_Container
+#bg_banner_Container
 {
    width: 1024px;
 }
@@ -2133,8 +2389,10 @@ body
 }
 #wb_Text3
 {
+   font-size: 20px;
    margin: 0;
    padding: 0;
+   text-align: left;
 }
 #wb_ThemeableButton2
 {
@@ -2239,6 +2497,61 @@ body
    text-align: left;
    text-transform: none;
 }
+#wb_Text6
+{
+   left: 26px;
+   top: 204px;
+   width: 471px;
+   height: 89px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text6
+{
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Image6
+{
+   left: 602px;
+   top: 66px;
+   width: 372px;
+   height: 237px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text7
+{
+   left: 59px;
+   top: 107px;
+   width: 438px;
+   height: 72px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text7
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text8
+{
+   left: 173px;
+   top: 321px;
+   width: 233px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text8
+{
+   margin: 0;
+   padding: 0;
+}
 #wb_CssMenu1
 {
    left: 289px;
@@ -2330,7 +2643,7 @@ body
 #lg_rodape
 {
    left: 0px;
-   top: 1212px;
+   top: 1608px;
    height: 202px;
    visibility: visible;
    display: block;
@@ -2550,20 +2863,46 @@ body
    background-color: #645600;
    background-image: none;
 }
-#Layer1
+#dhl_banner
+{
+   left: 0px;
+   top: 1289px;
+   height: 550px;
+   visibility: visible;
+   display: block;
+   background-clip: padding-box;
+   background-color: transparent;
+   background-image: url('images/dhl_fundo.png');
+   background-repeat: no-repeat;
+   background-position: center top !important;
+   background-attachment: scroll;
+   background-size: cover;
+   box-shadow: 0px 5px 5px #4F4F4F;
+}
+#dhl_banner
+{
+   width: 100%;
+}
+#dhl_banner_Container
+{
+   width: 768px;
+}
+#bg_banner
 {
    left: 0px;
    top: 699px;
    height: 606px;
    visibility: visible;
    display: block;
+   background-clip: padding-box;
+   background-color: transparent;
    box-shadow: 0px 5px 5px #4F4F4F;
 }
-#Layer1
+#bg_banner
 {
    width: 100%;
 }
-#Layer1_Container
+#bg_banner_Container
 {
    width: 768px;
 }
@@ -2621,8 +2960,10 @@ body
 }
 #wb_Text3
 {
+   font-size: 20px;
    margin: 0;
    padding: 0;
+   text-align: left;
 }
 #wb_ThemeableButton2
 {
@@ -2727,6 +3068,61 @@ body
    text-align: left;
    text-transform: none;
 }
+#wb_Text6
+{
+   left: 51px;
+   top: 372px;
+   width: 666px;
+   height: 67px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text6
+{
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Image6
+{
+   left: 194px;
+   top: 35px;
+   width: 381px;
+   height: 243px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text7
+{
+   left: 155px;
+   top: 289px;
+   width: 458px;
+   height: 72px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text7
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text8
+{
+   left: 274px;
+   top: 461px;
+   width: 220px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text8
+{
+   margin: 0;
+   padding: 0;
+}
 #wb_CssMenu1
 {
    left: 0px;
@@ -2818,7 +3214,7 @@ body
 #lg_rodape
 {
    left: 0px;
-   top: 1305px;
+   top: 1839px;
    height: 266px;
    visibility: visible;
    display: block;
@@ -3038,20 +3434,46 @@ body
    background-color: #645600;
    background-image: none;
 }
-#Layer1
+#dhl_banner
+{
+   left: 0px;
+   top: 1596px;
+   height: 646px;
+   visibility: visible;
+   display: block;
+   background-clip: padding-box;
+   background-color: transparent;
+   background-image: url('images/dhl_fundo.png');
+   background-repeat: no-repeat;
+   background-position: center top !important;
+   background-attachment: scroll;
+   background-size: cover;
+   box-shadow: 0px 5px 5px #4F4F4F;
+}
+#dhl_banner
+{
+   width: 100%;
+}
+#dhl_banner_Container
+{
+   width: 688px;
+}
+#bg_banner
 {
    left: 0px;
    top: 906px;
    height: 724px;
    visibility: visible;
    display: block;
+   background-clip: padding-box;
+   background-color: transparent;
    box-shadow: 0px 5px 5px #4F4F4F;
 }
-#Layer1
+#bg_banner
 {
    width: 100%;
 }
-#Layer1_Container
+#bg_banner_Container
 {
    width: 688px;
 }
@@ -3109,8 +3531,10 @@ body
 }
 #wb_Text3
 {
+   font-size: 20px;
    margin: 0;
    padding: 0;
+   text-align: left;
 }
 #wb_ThemeableButton2
 {
@@ -3215,6 +3639,61 @@ body
    text-align: left;
    text-transform: none;
 }
+#wb_Text6
+{
+   left: 68px;
+   top: 420px;
+   width: 552px;
+   height: 89px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text6
+{
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Image6
+{
+   left: 153px;
+   top: 56px;
+   width: 383px;
+   height: 244px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text7
+{
+   left: 107px;
+   top: 323px;
+   width: 475px;
+   height: 72px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text7
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text8
+{
+   left: 232px;
+   top: 560px;
+   width: 225px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text8
+{
+   margin: 0;
+   padding: 0;
+}
 #wb_CssMenu1
 {
    left: 0px;
@@ -3306,7 +3785,7 @@ body
 #lg_rodape
 {
    left: 0px;
-   top: 1630px;
+   top: 2242px;
    height: 253px;
    visibility: visible;
    display: block;
@@ -3526,20 +4005,46 @@ body
    background-color: #645600;
    background-image: none;
 }
-#Layer1
+#dhl_banner
+{
+   left: 0px;
+   top: 1451px;
+   height: 654px;
+   visibility: visible;
+   display: block;
+   background-clip: padding-box;
+   background-color: transparent;
+   background-image: url('images/dhl_fundo.png');
+   background-repeat: no-repeat;
+   background-position: center top !important;
+   background-attachment: scroll;
+   background-size: cover;
+   box-shadow: 0px 5px 5px #4F4F4F;
+}
+#dhl_banner
+{
+   width: 100%;
+}
+#dhl_banner_Container
+{
+   width: 375px;
+}
+#bg_banner
 {
    left: 0px;
    top: 716px;
    height: 767px;
    visibility: visible;
    display: block;
+   background-clip: padding-box;
+   background-color: transparent;
    box-shadow: 0px 5px 5px #4F4F4F;
 }
-#Layer1
+#bg_banner
 {
    width: 100%;
 }
-#Layer1_Container
+#bg_banner_Container
 {
    width: 375px;
 }
@@ -3597,8 +4102,10 @@ body
 }
 #wb_Text3
 {
+   font-size: 20px;
    margin: 0;
    padding: 0;
+   text-align: left;
 }
 #wb_ThemeableButton2
 {
@@ -3703,6 +4210,61 @@ body
    text-align: left;
    text-transform: none;
 }
+#wb_Text6
+{
+   left: 28px;
+   top: 434px;
+   width: 319px;
+   height: 134px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text6
+{
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_Image6
+{
+   left: 44px;
+   top: 65px;
+   width: 286px;
+   height: 182px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text7
+{
+   left: 25px;
+   top: 264px;
+   width: 325px;
+   height: 143px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text7
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text8
+{
+   left: 73px;
+   top: 598px;
+   width: 228px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text8
+{
+   margin: 0;
+   padding: 0;
+}
 #wb_CssMenu1
 {
    left: 0px;
@@ -3794,7 +4356,7 @@ body
 #lg_rodape
 {
    left: 0px;
-   top: 1483px;
+   top: 2105px;
    height: 311px;
    visibility: visible;
    display: block;
@@ -4024,21 +4586,34 @@ $(document).ready(function()
    });
    $(window).on('resize', function()
    {
-      ResponsiveVideo('Layer1-video');
+      ResponsiveVideo('bg_banner-video');
    });
-   ResponsiveVideo('Layer1-video');
+   ResponsiveVideo('bg_banner-video');
 });
 </script>
 </head>
 <body>
-<main id="Layer1">
-<div id="Layer1-video"><iframe src="https://www.youtube.com/embed/J1miw7WBG8k?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=J1miw7WBG8k" frameborder="0" allowfullscreen></iframe></div>
-<div id="Layer1-overlay"></div>
-<div id="Layer1_Container">
+<main id="dhl_banner">
+<div id="dhl_banner-overlay"></div>
+<div id="dhl_banner_Container">
+<div id="wb_Text6">
+<span style="color:#333333;">Help DrillBoy restore order to his planet in this adventure game inspired by classic 90s platforms. Shoot, slide, enter tubes and be launched by cannons, destroying everything in your path!</span></div>
+<div id="wb_Image6">
+<img src="images/dhl_logo.png" id="Image6" alt="" width="376" height="239"></div>
+<div id="wb_Text7">
+<span style="color:#333333;font-family:Arial;font-size:32px;"><strong>Destroy the corruption that ravages all worker robots</strong></span></div>
+<div id="wb_Text8">
+<span style="color:#333333;font-family:Arial;font-size:32px;"><strong>Coming Soon</strong></span></div>
+</div>
+</main>
+<main id="bg_banner">
+<div id="bg_banner-video"><iframe src="https://www.youtube.com/embed/J1miw7WBG8k?controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=J1miw7WBG8k" frameborder="0" allowfullscreen></iframe></div>
+<div id="bg_banner-overlay"></div>
+<div id="bg_banner_Container">
 <div id="wb_ThemeableButton2">
 <a class="ui-button ui-corner-all" id="ThemeableButton2" href="./breakinggates" target="_blank" title="See More">See More</a></div>
 <div id="wb_Text3">
-<span style="color:#F6F6F6;font-family:Arial;font-size:20px;">2D platform, action and adventure game in a fantastic and animated world. Explore an open map, collect items, create and unlock a vast array of weapons, equipment and loots to defeat the countless challenging creatures and bosses that await you in this adventure!</span></div>
+<span style="color:#F6F6F6;">2D platform, action and adventure game in a fantastic and animated world. Explore an open map, collect items, create and unlock a vast array of weapons, equipment and loots to defeat the countless challenging creatures and bosses that await you in this adventure!</span></div>
 <div id="wb_Image2">
 <img src="images/bg_logo.png" id="Image2" alt="" width="386" height="246"></div>
 <div id="wb_bg_title">
