@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Breaking Gates redirecting</title>
+<meta name="generator" content="WYSIWYG Web Builder 19 - https://www.wysiwygwebbuilder.com">
+<style>
+div#container
+{
+   width: 375px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+#wb_Image3
+{
+   vertical-align: top;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+</style>
+<script>
+    window.onload = function() {
+        var desktopFallback = "https://store.steampowered.com/app/1248550/Breaking_Gates",
+        mobileFallback = "https://play.google.com/store/apps/details?id=com.ylungamestudio.breakinggatespass",
+        app = "vnd.googleplay:com.ylungamestudio.breakinggatespass";
+        if( /Android|iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
+            window.location = app;
+            window.setTimeout(function() {
+                window.location = mobileFallback;
+            }, 25);
+        } else {
+            window.location = desktopFallback;
+        }
+        function killPopup() {
+            window.removeEventListener('pagehide', killPopup);
+        }
+        window.addEventListener('pagehide', killPopup);
+    };
+</script>
+</head>
+<body>
+<div id="container">
+<div id="wb_Image3" style="position:absolute;left:157px;top:463px;width:61px;height:72px;z-index:0;">
+<img src="images/load_link.gif" id="Image3" alt="" width="61" height="69"></div>
+</div>
+</body>
+</html>
