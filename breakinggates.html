@@ -171,6 +171,7 @@ a:hover
 #PhotoGallery1 .thumbnail img
 {
    border: 0px #DDDDDD solid;
+   border-color: rgba(221,221,221,0.00);
    display: block;
    width: 100%;
    height: auto;
@@ -3312,9 +3313,9 @@ body
 }
 #wb_TextMenu1
 {
-   left: 180px;
+   left: 89px;
    top: 112px;
-   width: 284px;
+   width: 388px;
    height: 28px;
    visibility: visible;
    display: inline;
@@ -3443,10 +3444,9 @@ body
    visibility: visible;
    display: block;
    background-clip: padding-box;
-   background-color: transparent;
-   background-image: url('images/breakinggates_Layer1_bkgrnd375.png');
-   background-repeat: repeat;
-   background-position: left top;
+   background-color: #F5F5F5;
+   background-image: none;
+   background-image: none;
 }
 #Layer1
 {
@@ -3508,7 +3508,7 @@ body
 #wb_Text2
 {
    left: 27px;
-   top: 417px;
+   top: 419px;
    width: 300px;
    height: 168px;
    visibility: visible;
@@ -3524,7 +3524,7 @@ body
 #wb_YouTube1
 {
    left: 24px;
-   top: 621px;
+   top: 650px;
    width: 335px;
    height: 188px;
    visibility: visible;
@@ -3581,7 +3581,7 @@ body
 #RollOver9
 {
    left: 95px;
-   top: 844px;
+   top: 865px;
    width: 193px;
    height: 61px;
    visibility: visible;
@@ -3590,7 +3590,7 @@ body
 #RollOver10
 {
    left: 95px;
-   top: 928px;
+   top: 949px;
    width: 193px;
    height: 62px;
    visibility: visible;
@@ -3784,9 +3784,9 @@ body
 }
 #wb_TextMenu1
 {
-   left: 49px;
+   left: 25px;
    top: 126px;
-   width: 277px;
+   width: 321px;
    height: 34px;
    visibility: visible;
    display: inline;
@@ -3904,10 +3904,8 @@ body
 <script src="jquery-3.7.1.min.js"></script>
 <script src="wb.overlay.min.js"></script>
 <script src="wb.drilldownmenu.min.js"></script>
-<link rel="stylesheet" href="fancybox/jquery.fancybox-1.3.4.css">
-<script src="fancybox/jquery.easing-1.3.pack.js"></script>
-<script src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-<script src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
 <script src="wwb19.min.js"></script>
 <script>
 $(document).ready(function()
@@ -3943,7 +3941,7 @@ $(document).ready(function()
       onScrollText2();
    });
    $("a[data-rel='PhotoGallery1']").attr('rel', 'PhotoGallery1');
-   $("a[rel^='PhotoGallery1']").fancybox({});
+   $("#PhotoGallery1").magnificPopup({delegate:'a', type:'image', gallery: {enabled: true, navigateByImgClick: true}});
    $('#OverlayMenu1-overlay').overlay({hideTransition:true});
    $('.OverlayMenu1').drilldownmenu({backText: 'Back'});
    $('#OverlayMenu1').on('click', function(e)
@@ -3963,37 +3961,37 @@ $(document).ready(function()
 <div id="PhotoGallery1">
    <div class="thumbnails">
       <div class="thumbnail">
-         <a href="images/s2_3.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_s2_3.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/s2_3.png" data-rel="" title="s2_3"><img alt="" src="images/tn_s2_3.png" loading="lazy" class="image" title="s2_3" width="492" height="277"></a>
       </div>
       <div class="thumbnail">
-         <a href="images/s1_1.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_s1_1.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/s1_1.png" data-rel="" title="s1_1"><img alt="" src="images/tn_s1_1.png" loading="lazy" class="image" title="s1_1" width="492" height="277"></a>
       </div>
       <div class="clearfix visible-col2"></div>
       <div class="thumbnail">
-         <a href="images/s1_1_boss.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_s1_1_boss.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/s1_1_boss.png" data-rel="" title="s1_1_boss"><img alt="" src="images/tn_s1_1_boss.png" loading="lazy" class="image" title="s1_1_boss" width="492" height="277"></a>
       </div>
       <div class="clearfix visible-col3"></div>
       <div class="thumbnail">
-         <a href="images/s2_1.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_s2_1.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/s2_1.png" data-rel="" title="s2_1"><img alt="" src="images/tn_s2_1.png" loading="lazy" class="image" title="s2_1" width="492" height="277"></a>
       </div>
       <div class="clearfix visible-col2"></div>
       <div class="thumbnail">
-         <a href="images/menu_1.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_menu_1.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/menu_1.png" data-rel="" title="menu_1"><img alt="" src="images/tn_menu_1.png" loading="lazy" class="image" title="menu_1" width="492" height="277"></a>
       </div>
       <div class="thumbnail">
-         <a href="images/menu_4.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_menu_4.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/menu_4.png" data-rel="" title="menu_4"><img alt="" src="images/tn_menu_4.png" loading="lazy" class="image" title="menu_4" width="492" height="277"></a>
       </div>
       <div class="clearfix visible-col2"></div>
       <div class="clearfix visible-col3"></div>
       <div class="thumbnail">
-         <a href="images/Screenshot_1.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_Screenshot_1.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/Screenshot_1.png" data-rel="" title="Screenshot_1"><img alt="" src="images/tn_Screenshot_1.png" loading="lazy" class="image" title="Screenshot_1" width="492" height="277"></a>
       </div>
       <div class="thumbnail">
-         <a href="images/menu_3.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_menu_3.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/menu_3.png" data-rel="" title="menu_3"><img alt="" src="images/tn_menu_3.png" loading="lazy" class="image" title="menu_3" width="492" height="277"></a>
       </div>
       <div class="clearfix visible-col2"></div>
       <div class="thumbnail">
-         <a href="images/menu_2.png" data-rel="PhotoGallery1"><img alt="" src="images/tn_menu_2.png" loading="lazy" class="image" width="492" height="277"></a>
+         <a href="images/menu_2.png" data-rel="" title="menu_2"><img alt="" src="images/tn_menu_2.png" loading="lazy" class="image" title="menu_2" width="492" height="277"></a>
       </div>
       <div class="clearfix visible-col3"></div>
    </div>
@@ -4116,7 +4114,7 @@ $(document).ready(function()
 <div id="OverlayMenu1-overlay">
 <div class="OverlayMenu1">
 <ul class="drilldown-menu" role="menu">
-<li><a role="menuitem" href="#" class="OverlayMenu1-effect">Home</a></li>
+<li><a role="menuitem" href="./index" class="OverlayMenu1-effect">Home</a></li>
 <li>
 <a role="menuitem" href="#" class="OverlayMenu1-effect">Games</a>
 <ul class="drilldown-submenu" role="menu">
