@@ -1,0 +1,1282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Drill Hero Legend</title>
+<meta name="description" content="Get ready to drill and blast everything in front of you in this challenging game made by fans of classic 90s platformers! Shoot, slide, enter tubes and be launched by cannons, drill everything in your path!">
+<meta name="keywords" content="Drill Hero Legend, platformer game, game 2d platformer, drill, hero, legend">
+<meta name="author" content="Ylun Games">
+<meta name="categories" content="Games">
+<meta name="generator" content="Ylun Games">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="dhl_icon_32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="dhl_icon_64.png" rel="icon" sizes="64x64" type="image/png">
+<style>
+div#container
+{
+   width: 2700px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #808080;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+.visibility-hidden
+{
+   visibility: hidden;
+}
+@keyframes animate-fade-in-down
+{
+   0% { transform: translate(0px,-100px) rotate(0deg) ; opacity: 0;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+}
+@keyframes animate-fade-in-left
+{
+   0% { transform: translate(-100px,0px) rotate(0deg) ; opacity: 0;  }
+   100% { transform: translate(0px,0px) rotate(0deg) ; opacity: 1;  }
+}
+@media only screen and (min-width: 1320px) and (max-width: 2699px)
+{
+}
+@media only screen and (min-width: 1022px) and (max-width: 1319px)
+{
+}
+@media only screen and (max-width: 1021px)
+{
+}
+#lg_rodape
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+}
+#title
+{
+   background-color: transparent;
+   background-image: url('images/dhl_back_1.png');
+   background-repeat: no-repeat;
+   background-position: center top;
+   background-attachment: scroll;
+   background-size: cover;
+   border-radius: 0px;
+}
+#RollOver10
+{
+   border: 0px solid #DDDDDD;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver10 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver10 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver10 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver10 .hover
+{
+   visibility: hidden;
+}
+#RollOver10:hover .hover
+{
+   visibility: visible;
+}
+#RollOver10:hover span
+{
+   visibility: hidden;
+}
+#RollOver10 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Image2
+{
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: animate-fade-in-down 1000ms linear 0ms 1 normal both;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_title_texto 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_title_texto
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 20px;
+}
+#wb_title_texto div
+{
+   text-align: center;
+}
+#wb_dhl_title 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_dhl_title div
+{
+   text-align: center;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text2 div
+{
+   text-align: center;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text5 div
+{
+   text-align: left;
+}
+#wb_Image5
+{
+   vertical-align: top;
+}
+#Image5
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver5
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver5 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver5 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver5 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver5 .hover
+{
+   visibility: hidden;
+}
+#RollOver5:hover .hover
+{
+   visibility: visible;
+}
+#RollOver5:hover span
+{
+   visibility: hidden;
+}
+#RollOver5 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver6
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver6 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver6 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver6 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver6 .hover
+{
+   visibility: hidden;
+}
+#RollOver6:hover .hover
+{
+   visibility: visible;
+}
+#RollOver6:hover span
+{
+   visibility: hidden;
+}
+#RollOver6 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver4
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver4 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver4 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver4 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver4 .hover
+{
+   visibility: hidden;
+}
+#RollOver4:hover .hover
+{
+   visibility: visible;
+}
+#RollOver4:hover span
+{
+   visibility: hidden;
+}
+#RollOver4 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1 div
+{
+   text-align: center;
+}
+#RollOver8
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver8 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver8 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver8 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver8 .hover
+{
+   visibility: hidden;
+}
+#RollOver8:hover .hover
+{
+   visibility: visible;
+}
+#RollOver8:hover span
+{
+   visibility: hidden;
+}
+#RollOver8 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_TextMenu1
+{
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: none;
+   font-size: 24px;
+   margin: 0;
+   text-align: right;
+   overflow: hidden;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 0px 0 50px;
+}
+#wb_TextMenu1 a
+{
+   color: inherit;
+   text-decoration: inherit;
+}
+#wb_title_texto
+{
+   position: absolute;
+   left: 380px;
+   top: 647px;
+   width: 696px;
+   height: 69px;
+   text-align: center;
+   z-index: 9;
+}
+#RollOver6
+{
+   position: absolute;
+   left: 1566px;
+   top: 129px;
+   width: 33px;
+   height: 34px;
+   overflow: hidden;
+   z-index: 3;
+}
+#lg_rodape_Container
+{
+   width: 2700px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#RollOver4
+{
+   position: absolute;
+   left: 1668px;
+   top: 129px;
+   width: 33px;
+   height: 34px;
+   overflow: hidden;
+   z-index: 4;
+}
+#wb_Image2
+{
+   position: absolute;
+   left: 353px;
+   top: 16px;
+   width: 762px;
+   height: 485px;
+   z-index: 8;
+}
+#RollOver5
+{
+   position: absolute;
+   left: 1515px;
+   top: 131px;
+   width: 33px;
+   height: 34px;
+   overflow: hidden;
+   z-index: 2;
+}
+#wb_Text5
+{
+   position: absolute;
+   left: 221px;
+   top: 123px;
+   width: 415px;
+   height: 18px;
+   z-index: 0;
+}
+#lg_rodape
+{
+   position: absolute;
+   text-align: center;
+   left: 0px;
+   top: 793px;
+   width: 100%;
+   height: 195px;
+   z-index: 13;
+}
+#wb_TextMenu1
+{
+   position: absolute;
+   left: 1345px;
+   top: 32px;
+   width: 356px;
+   height: 28px;
+   z-index: 7;
+}
+#wb_dhl_title
+{
+   position: absolute;
+   left: 380px;
+   top: 520px;
+   width: 681px;
+   height: 95px;
+   text-align: center;
+   z-index: 10;
+}
+#title
+{
+   position: absolute;
+   text-align: center;
+   left: 0px;
+   top: 0px;
+   width: 100%;
+   height: 803px;
+   z-index: 14;
+}
+#wb_Image5
+{
+   position: absolute;
+   left: 221px;
+   top: 22px;
+   width: 188px;
+   height: 83px;
+   z-index: 1;
+}
+#RollOver8
+{
+   position: absolute;
+   left: 1617px;
+   top: 129px;
+   width: 33px;
+   height: 34px;
+   overflow: hidden;
+   z-index: 6;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 220px;
+   top: 150px;
+   width: 557px;
+   height: 18px;
+   text-align: center;
+   z-index: 5;
+}
+#wb_Text2
+{
+   position: absolute;
+   left: 1200px;
+   top: 76px;
+   width: 681px;
+   height: 95px;
+   text-align: center;
+   z-index: 11;
+}
+#RollOver10
+{
+   position: absolute;
+   left: 1374px;
+   top: 213px;
+   width: 287px;
+   height: 91px;
+   overflow: hidden;
+   z-index: 12;
+}
+#title_Container
+{
+   width: 2700px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+@media only screen and (min-width: 1320px) and (max-width: 2699px)
+{
+div#container
+{
+   width: 1320px;
+}
+body
+{
+   background-color: #808080;
+   background-image: none;
+}
+#lg_rodape
+{
+   left: 0px;
+   top: 638px;
+   height: 195px;
+   visibility: visible;
+   display: block;
+}
+#lg_rodape
+{
+   width: 100%;
+}
+#lg_rodape_Container
+{
+   width: 1320px;
+}
+#title
+{
+   left: 0px;
+   top: 0px;
+   height: 638px;
+   visibility: visible;
+   display: block;
+}
+#title
+{
+   width: 100%;
+}
+#title_Container
+{
+   width: 1320px;
+}
+#RollOver10
+{
+   left: 841px;
+   top: 228px;
+   width: 231px;
+   height: 74px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Image2
+{
+   left: 76px;
+   top: 30px;
+   width: 471px;
+   height: 299px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_title_texto
+{
+   left: 21px;
+   top: 475px;
+   width: 581px;
+   height: 92px;
+   visibility: visible;
+   display: inline;
+}
+#wb_title_texto
+{
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_dhl_title
+{
+   left: 21px;
+   top: 361px;
+   width: 581px;
+   height: 95px;
+   visibility: visible;
+   display: inline;
+}
+#wb_dhl_title
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   left: 714px;
+   top: 69px;
+   width: 484px;
+   height: 95px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text5
+{
+   left: 31px;
+   top: 123px;
+   width: 415px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 31px;
+   top: 22px;
+   width: 188px;
+   height: 83px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#RollOver5
+{
+   left: 1045px;
+   top: 131px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver6
+{
+   left: 1096px;
+   top: 129px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver4
+{
+   left: 1198px;
+   top: 129px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 30px;
+   top: 150px;
+   width: 557px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#RollOver8
+{
+   left: 1147px;
+   top: 129px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_TextMenu1
+{
+   left: 875px;
+   top: 32px;
+   width: 356px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 0px 0 50px;
+}
+}
+@media only screen and (min-width: 1022px) and (max-width: 1319px)
+{
+div#container
+{
+   width: 1022px;
+}
+body
+{
+   background-color: #808080;
+   background-image: none;
+}
+#lg_rodape
+{
+   left: 0px;
+   top: 915px;
+   height: 345px;
+   visibility: visible;
+   display: block;
+}
+#lg_rodape
+{
+   width: 100%;
+}
+#lg_rodape_Container
+{
+   width: 1022px;
+}
+#title
+{
+   left: 0px;
+   top: 0px;
+   height: 927px;
+   visibility: visible;
+   display: block;
+}
+#title
+{
+   width: 100%;
+}
+#title_Container
+{
+   width: 1022px;
+}
+#RollOver10
+{
+   left: 369px;
+   top: 746px;
+   width: 290px;
+   height: 93px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Image2
+{
+   left: 240px;
+   top: 18px;
+   width: 542px;
+   height: 345px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_title_texto
+{
+   left: 166px;
+   top: 504px;
+   width: 696px;
+   height: 69px;
+   visibility: visible;
+   display: inline;
+}
+#wb_title_texto
+{
+   font-size: 20px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_dhl_title
+{
+   left: 216px;
+   top: 395px;
+   width: 590px;
+   height: 95px;
+   visibility: visible;
+   display: inline;
+}
+#wb_dhl_title
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   left: 216px;
+   top: 618px;
+   width: 590px;
+   height: 95px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text5
+{
+   left: 362px;
+   top: 123px;
+   width: 299px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 417px;
+   top: 22px;
+   width: 188px;
+   height: 83px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#RollOver5
+{
+   left: 418px;
+   top: 284px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver6
+{
+   left: 469px;
+   top: 282px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver4
+{
+   left: 571px;
+   top: 282px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 233px;
+   top: 150px;
+   width: 557px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#RollOver8
+{
+   left: 520px;
+   top: 282px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_TextMenu1
+{
+   left: 375px;
+   top: 208px;
+   width: 272px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 0px 0 50px;
+}
+}
+@media only screen and (max-width: 1021px)
+{
+div#container
+{
+   width: 768px;
+}
+body
+{
+   background-color: #808080;
+   background-image: none;
+}
+#lg_rodape
+{
+   left: 0px;
+   top: 903px;
+   height: 355px;
+   visibility: visible;
+   display: block;
+}
+#lg_rodape
+{
+   width: 100%;
+}
+#lg_rodape_Container
+{
+   width: 768px;
+}
+#title
+{
+   left: 0px;
+   top: 0px;
+   height: 905px;
+   visibility: visible;
+   display: block;
+}
+#title
+{
+   width: 100%;
+}
+#title_Container
+{
+   width: 768px;
+}
+#RollOver10
+{
+   left: 243px;
+   top: 779px;
+   width: 256px;
+   height: 82px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Image2
+{
+   left: 113px;
+   top: 21px;
+   width: 542px;
+   height: 345px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_title_texto
+{
+   left: 89px;
+   top: 528px;
+   width: 590px;
+   height: 96px;
+   visibility: visible;
+   display: inline;
+}
+#wb_title_texto
+{
+   font-size: 21px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+#wb_dhl_title
+{
+   left: 103px;
+   top: 395px;
+   width: 576px;
+   height: 95px;
+   visibility: visible;
+   display: inline;
+}
+#wb_dhl_title
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   left: 91px;
+   top: 655px;
+   width: 576px;
+   height: 95px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text5
+{
+   left: 234px;
+   top: 294px;
+   width: 301px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 290px;
+   top: 21px;
+   width: 188px;
+   height: 83px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#RollOver5
+{
+   left: 278px;
+   top: 209px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver6
+{
+   left: 338px;
+   top: 209px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver4
+{
+   left: 458px;
+   top: 209px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 105px;
+   top: 312px;
+   width: 558px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#RollOver8
+{
+   left: 398px;
+   top: 209px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_TextMenu1
+{
+   left: 240px;
+   top: 128px;
+   width: 289px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 0px 0 50px;
+}
+}
+</style>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="wwb19.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#wb_title_texto').addClass('visibility-hidden');
+   function onScrolltitle_texto()
+   {
+      var $obj = $("#wb_title_texto");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_title_texto', 'animate-fade-in-left', 150, 500);
+      }
+   }
+   onScrolltitle_texto();
+   $(window).scroll(function(event)
+   {
+      onScrolltitle_texto();
+   });
+});
+</script>
+</head>
+<body>
+<footer id="lg_rodape">
+<div id="lg_rodape_Container">
+<div id="wb_Text5">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">2024 Powered by Ylun Games. Ver 0.0.1.</span></div>
+<div id="wb_Image5">
+<a href="./index"><img src="images/rodape_logo.png" id="Image5" alt="" width="188" height="84"></a></div>
+<div id="RollOver5">
+<a href="https://www.instagram.com/ylungames" target="_blank">
+<img class="hover" alt="" src="images/insta_icon2.png" width="33" height="34">
+<span><img alt="" src="images/insta_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="RollOver6">
+<a href="https://www.twitter.com/ylungames" target="_blank">
+<img class="hover" alt="" src="images/tw_icon2.png" width="33" height="34">
+<span><img alt="" src="images/tw_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="RollOver4">
+<a href="https://play.google.com/store/apps/dev?id=8237892545547280535&hl" target="_blank">
+<img class="hover" alt="" src="images/googleplay_icon2.png" width="33" height="34">
+<span><img alt="" src="images/googleplay_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="wb_Text1">
+<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">All trademarks referenced herein are the properties of their respective owners.</span></div>
+<div id="RollOver8">
+<a href="https://store.steampowered.com/developer/ylun" target="_blank">
+<img class="hover" alt="" src="images/steam_icon2.png" width="33" height="34">
+<span><img alt="" src="images/steam_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="wb_TextMenu1">
+<span><a href="./index">Home</a></span><span><a href="./privacypolicy" title="Privacy Policy">Privacy Policy</a></span></div>
+</div>
+</footer>
+<div id="container">
+</div>
+<div id="title">
+<div id="title_Container">
+<div id="wb_Image2">
+<img src="images/dhl_logo.png" id="Image2" alt="" width="762" height="485"></div>
+<div id="wb_title_texto">
+<span style="color:#645600;">Get ready to drill and blast everything in front of you in this challenging game made by fans of classic 90s platformers! Shoot, slide, enter tubes and be launched by cannons, drill everything in your path!</span></div>
+<div id="wb_dhl_title">
+<span style="color:#645600;font-family:Arial;font-size:43px;"><strong>AN ADVENTURE <br>WITH A DRILL-HEAD HERO!</strong></span></div>
+<div id="wb_Text2">
+<span style="color:#645600;font-family:Arial;font-size:43px;"><strong>Pre-register on available platforms</strong></span></div>
+<div id="RollOver10">
+<a href="https://play.google.com/store/apps/details?id=com.ylungamestudio.drillherolegend">
+<img class="hover" alt="" src="images/googleplay_botao2.png" width="287" height="91">
+<span><img alt="" src="images/googleplay_botao.png" width="287" height="91"></span>
+</a>
+</div>
+</div>
+</div>
+</body>
+</html>
