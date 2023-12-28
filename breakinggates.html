@@ -2,16 +2,15 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Breaking Gates</title>
+<title>Breaking Gates | 2D side-scroller action RPG</title>
 <meta name="description" content="Breaking Gates is a 2D side-scroller action RPG focused on fast-paced combat! You go on an adventure to save a threatened kingdom. Face challenges, defeat imposing creatures, forge equipment and master skills while exploring a map full of mysteries!Ylun Games is a small Brazilian indie game studio developing delicius handmade games!">
 <meta name="keywords" content="ylun,ylun games,Breaking Gates, breaking, gates, metroidvania, games 2D action, action RPG, RPG, side-scrolling, hack-and-shashylun,ylun games,Breaking Gates">
 <meta name="author" content="Ylun Games">
 <meta name="categories" content="Games">
 <meta name="generator" content="Ylun Games">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="fav_icon%2d02%2d02.png" rel="icon" sizes="17x17" type="image/png">
-<link href="fav_icon%2d32x32%2d02.png" rel="icon" sizes="32x32" type="image/png">
-<link href="fav_icon%2d64x64%2d02.png" rel="icon" sizes="65x65" type="image/png">
+<link href="bg_icon_32.png" rel="icon" sizes="32x32" type="image/png">
+<link href="bg_icon_64.png" rel="icon" sizes="64x64" type="image/png">
 <style>
 body
 {
@@ -39,6 +38,7 @@ a:hover
    visibility: hidden;
 }
 </style>
+<link href="lightslider.min.css" rel="stylesheet">
 <link href="font-awesome.min.css" rel="stylesheet">
 <style>
 @keyframes animate-fade-in-left
@@ -70,9 +70,11 @@ a:hover
 {
    background-clip: padding-box;
    background-color: transparent;
-   background-image: url('images/breakinggates_Layer1_bkgrnd.png');
-   background-repeat: repeat;
-   background-position: left top;
+   background-image: url('images/bg_back_2.png');
+   background-repeat: no-repeat;
+   background-position: right bottom;
+   background-attachment: scroll;
+   background-size: cover;
    border-radius: 0px;
    box-shadow: 0px 5px 10px rgba(79,79,79,0.11);
 }
@@ -280,25 +282,41 @@ a:hover
    width: 100%;
    height: 100%;
 }
-#SlideShow1 .image
+#SlideShow2
 {
-   border-width: 0;
-   border-radius: inherit;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   margin: 0;
+   box-shadow: 0px 0px 20px rgba(51,51,51,0.71);
+   margin-left: auto !important;
+   margin-right: auto !important;
+   max-width: 1920px;
 }
-#SlideShow1 .carousel-control-next, #SlideShow1 .carousel-control-prev
+#SlideShow2 .lSSlideWrapper
+{
+   border-radius: 0px;
+}
+.lSSlideOuter .lSPager.lSGallery li, .lSSlideOuter .lSPager.lSGallery li.active, .lSSlideOuter .lSPager.lSGallery li:hover
+{
+   border-radius: 0px;
+}
+#SlideShow2 img
+{
+   object-fit: cover;
+   width: 100%;
+}
+#SlideShow2 .lSGallery
+{
+   display: inline-flex;
+}
+#SlideShow2 .carousel-control-next, #SlideShow2 .carousel-control-prev
 {
    cursor: pointer;
    position: absolute;
    text-align: center;
    top: 0;
    left: 0;
-   opacity: 0.94;
+   opacity: 0.9;
 }
-#SlideShow1 .carousel-control-next-icon, #SlideShow1 .carousel-control-prev-icon
+#SlideShow2 .carousel-control-next-icon, #SlideShow2 .carousel-control-prev-icon
 {
    display: inline-block;
    width: 32px;
@@ -306,31 +324,42 @@ a:hover
    background: transparent no-repeat center center;
    background-size: 100% 100%;
 }
-#SlideShow1 .carousel-control-next:hover, #SlideShow1 .carousel-control-prev:hover
+#SlideShow2 .carousel-control-next:hover, #SlideShow2 .carousel-control-prev:hover
 {
    text-decoration: none;
    outline: 0;
    opacity: 1;
 }
-#SlideShow1 .carousel-control-prev-icon
+#SlideShow2 .carousel-control-prev-icon
 {
-   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23FFFFFF%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M100%2026%20L62%2064%20L100%20102%20C101%20103%2c%20101%20104%2c%20101%20106%20C101%20107%2c%20101%20108%2c%20100%20109%20L88%20121%20C87%20122%2c%2086%20122%2c%2085%20122%20C84%20122%2c%2083%20122%2c%2082%20121%20L29%2068%20C28%2067%2c%2027%2066%2c%2027%2064%20C27%2063%2c%2028%2062%2c%2029%2061%20L82%208%20C83%207%2c%2084%207%2c%2085%207%20C86%207%2c%2087%207%2c%2088%208%20L100%2020%20C101%2021%2c%20101%2022%2c%20101%2023%20C101%2024%2c%20101%2026%2c%20100%2026%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23F5F5F5%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M100%2026%20L62%2064%20L100%20102%20C101%20103%2c%20101%20104%2c%20101%20106%20C101%20107%2c%20101%20108%2c%20100%20109%20L88%20121%20C87%20122%2c%2086%20122%2c%2085%20122%20C84%20122%2c%2083%20122%2c%2082%20121%20L29%2068%20C28%2067%2c%2027%2066%2c%2027%2064%20C27%2063%2c%2028%2062%2c%2029%2061%20L82%208%20C83%207%2c%2084%207%2c%2085%207%20C86%207%2c%2087%207%2c%2088%208%20L100%2020%20C101%2021%2c%20101%2022%2c%20101%2023%20C101%2024%2c%20101%2026%2c%20100%2026%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
 }
-#SlideShow1 .carousel-control-prev:hover .carousel-control-prev-icon
+#SlideShow2 .carousel-control-prev:hover .carousel-control-prev-icon
 {
    background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23F0E68C%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M100%2026%20L62%2064%20L100%20102%20C101%20103%2c%20101%20104%2c%20101%20106%20C101%20107%2c%20101%20108%2c%20100%20109%20L88%20121%20C87%20122%2c%2086%20122%2c%2085%20122%20C84%20122%2c%2083%20122%2c%2082%20121%20L29%2068%20C28%2067%2c%2027%2066%2c%2027%2064%20C27%2063%2c%2028%2062%2c%2029%2061%20L82%208%20C83%207%2c%2084%207%2c%2085%207%20C86%207%2c%2087%207%2c%2088%208%20L100%2020%20C101%2021%2c%20101%2022%2c%20101%2023%20C101%2024%2c%20101%2026%2c%20100%2026%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
 }
-#SlideShow1 .carousel-control-next-icon
+#SlideShow2 .carousel-control-next-icon
 {
-   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23FFFFFF%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M99%2068%20L46%20121%20C45%20122%2c%2044%20122%2c%2043%20122%20C42%20122%2c%2041%20122%2c%2040%20121%20L28%20109%20C27%20108%2c%2027%20107%2c%2027%20106%20C27%20104%2c%2027%20103%2c%2028%20102%20L66%2064%20L28%2026%20C27%2026%2c%2027%2024%2c%2027%2023%20C27%2022%2c%2027%2021%2c%2028%2020%20L40%208%20C41%207%2c%2042%207%2c%2043%207%20C44%207%2c%2045%207%2c%2046%208%20L99%2061%20C100%2062%2c%20101%2063%2c%20101%2064%20C101%2066%2c%20100%2067%2c%2099%2068%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
+   background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23F5F5F5%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M99%2068%20L46%20121%20C45%20122%2c%2044%20122%2c%2043%20122%20C42%20122%2c%2041%20122%2c%2040%20121%20L28%20109%20C27%20108%2c%2027%20107%2c%2027%20106%20C27%20104%2c%2027%20103%2c%2028%20102%20L66%2064%20L28%2026%20C27%2026%2c%2027%2024%2c%2027%2023%20C27%2022%2c%2027%2021%2c%2028%2020%20L40%208%20C41%207%2c%2042%207%2c%2043%207%20C44%207%2c%2045%207%2c%2046%208%20L99%2061%20C100%2062%2c%20101%2063%2c%20101%2064%20C101%2066%2c%20100%2067%2c%2099%2068%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
 }
-#SlideShow1 .carousel-control-next:hover .carousel-control-next-icon
+#SlideShow2 .carousel-control-next:hover .carousel-control-next-icon
 {
    background: url('data:image/svg+xml,%3csvg%20style%3d%22fill:%23F0E68C%22%20viewBox%3d%220%200%20128%20128%22%20version%3d%221.1%22%20xmlns%3d%22http://www.w3.org/2000/svg%22%3e%0d%0a%20%20%20%3cpath%20d%3d%22M99%2068%20L46%20121%20C45%20122%2c%2044%20122%2c%2043%20122%20C42%20122%2c%2041%20122%2c%2040%20121%20L28%20109%20C27%20108%2c%2027%20107%2c%2027%20106%20C27%20104%2c%2027%20103%2c%2028%20102%20L66%2064%20L28%2026%20C27%2026%2c%2027%2024%2c%2027%2023%20C27%2022%2c%2027%2021%2c%2028%2020%20L40%208%20C41%207%2c%2042%207%2c%2043%207%20C44%207%2c%2045%207%2c%2046%208%20L99%2061%20C100%2062%2c%20101%2063%2c%20101%2064%20C101%2066%2c%20100%2067%2c%2099%2068%22/%3e%0d%0a%3c/svg%3e%0d%0a') no-repeat center center;
 }
-#SlideShow1
+#SlideShow2
 {
-   border: 0px solid #DDDDDD;
+   border-top-width: 0px;
+   border-right-width: 0px;
+   border-bottom-width: 0px;
+   border-left-width: 0px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #000000;
+   border-right-color: #000000;
+   border-bottom-color: #000000;
+   border-left-color: #000000;
    border-radius: 0px;
 }
 #wb_CssMenu1
@@ -1407,13 +1436,13 @@ a:hover
    height: 195px;
    z-index: 25;
 }
-#SlideShow1
+#SlideShow2
 {
    position: absolute;
-   left: 124px;
-   top: 108px;
-   width: 1493px;
-   height: 840px;
+   left: 286px;
+   top: 129px;
+   width: 1309px;
+   height: 814px;
    z-index: 1;
 }
 #wb_TextMenu1
@@ -1435,7 +1464,7 @@ a:hover
    height: 645px;
    z-index: 24;
 }
-#SlideShow1_back
+#SlideShow2_back
 {
    position: absolute;
    left: 4px;
@@ -1481,7 +1510,7 @@ a:hover
    text-align: center;
    z-index: 13;
 }
-#SlideShow1_next
+#SlideShow2_next
 {
    position: absolute;
    right: 4px;
@@ -1619,9 +1648,11 @@ body
    display: block;
    background-clip: padding-box;
    background-color: transparent;
-   background-image: url('images/breakinggates_Layer1_bkgrnd1280.png');
-   background-repeat: repeat;
-   background-position: left top;
+   background-image: url('images/bg_back_2.png');
+   background-repeat: no-repeat;
+   background-position: center bottom !important;
+   background-attachment: scroll;
+   background-size: cover;
    box-shadow: 0px 5px 10px #4F4F4F;
 }
 #Layer1
@@ -1658,6 +1689,11 @@ body
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
 }
 #wb_Heading1
 {
@@ -1710,13 +1746,36 @@ body
 #wb_Heading2
 {
    left: 505px;
-   top: 63px;
+   top: 40px;
    width: 271px;
    height: 57px;
    visibility: visible;
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: left;
+}
+#Heading2
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   text-align: left;
+   text-transform: none;
 }
 #wb_Image2
 {
@@ -1747,20 +1806,20 @@ body
    visibility: visible;
    display: inline;
 }
-#SlideShow1
+#SlideShow2
 {
    left: 120px;
-   top: 138px;
-   width: 1098px;
-   height: 618px;
+   top: 120px;
+   width: 1100px;
+   height: 684px;
    visibility: visible;
    display: inline-block;
 }
-#SlideShow1_back
+#SlideShow2_back
 {
    left: 4px;
 }
-#SlideShow1_next
+#SlideShow2_next
 {
 }
 #wb_CssMenu1
@@ -2083,9 +2142,11 @@ body
    display: block;
    background-clip: padding-box;
    background-color: transparent;
-   background-image: url('images/breakinggates_Layer1_bkgrnd1024.png');
-   background-repeat: repeat;
-   background-position: left top;
+   background-image: url('images/bg_back_2.png');
+   background-repeat: no-repeat;
+   background-position: right bottom !important;
+   background-attachment: scroll;
+   background-size: cover;
    box-shadow: 0px 5px 10px #4F4F4F;
 }
 #Layer1
@@ -2122,6 +2183,33 @@ body
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Heading1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: left;
+}
+#Heading1
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   text-align: left;
+   text-transform: none;
+}
+#Heading1 a
+{
+   color: inherit;
 }
 #wb_Text2
 {
@@ -2152,13 +2240,36 @@ body
 #wb_Heading2
 {
    left: 377px;
-   top: 61px;
+   top: 33px;
    width: 271px;
    height: 57px;
    visibility: visible;
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: left;
+}
+#Heading2
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   text-align: left;
+   text-transform: none;
 }
 #wb_Image2
 {
@@ -2189,20 +2300,20 @@ body
    visibility: visible;
    display: inline;
 }
-#SlideShow1
+#SlideShow2
 {
-   left: 124px;
-   top: 138px;
-   width: 753px;
-   height: 424px;
+   left: 139px;
+   top: 100px;
+   width: 798px;
+   height: 497px;
    visibility: visible;
    display: inline-block;
 }
-#SlideShow1_back
+#SlideShow2_back
 {
    left: 4px;
 }
-#SlideShow1_next
+#SlideShow2_next
 {
 }
 #wb_CssMenu1
@@ -2525,9 +2636,11 @@ body
    display: block;
    background-clip: padding-box;
    background-color: transparent;
-   background-image: url('images/breakinggates_Layer1_bkgrnd768.png');
-   background-repeat: repeat;
-   background-position: left top;
+   background-image: url('images/bg_back_2.png');
+   background-repeat: no-repeat;
+   background-position: right bottom !important;
+   background-attachment: scroll;
+   background-size: cover;
    box-shadow: 0px 5px 10px #4F4F4F;
 }
 #Layer1
@@ -2564,6 +2677,11 @@ body
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
 }
 #wb_Heading1
 {
@@ -2616,13 +2734,36 @@ body
 #wb_Heading2
 {
    left: 245px;
-   top: 41px;
+   top: 27px;
    width: 278px;
    height: 57px;
    visibility: visible;
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: left;
+}
+#Heading2
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   text-align: left;
+   text-transform: none;
 }
 #wb_Image2
 {
@@ -2653,20 +2794,20 @@ body
    visibility: visible;
    display: inline;
 }
-#SlideShow1
+#SlideShow2
 {
-   left: 82px;
-   top: 108px;
-   width: 599px;
-   height: 337px;
+   left: 92px;
+   top: 102px;
+   width: 585px;
+   height: 375px;
    visibility: visible;
    display: inline-block;
 }
-#SlideShow1_back
+#SlideShow2_back
 {
    left: 4px;
 }
-#SlideShow1_next
+#SlideShow2_next
 {
 }
 #wb_CssMenu1
@@ -2984,14 +3125,16 @@ body
 {
    left: 0px;
    top: 1099px;
-   height: 892px;
+   height: 562px;
    visibility: visible;
    display: block;
    background-clip: padding-box;
    background-color: transparent;
-   background-image: url('images/breakinggates_Layer1_bkgrnd688.png');
-   background-repeat: repeat;
-   background-position: left top;
+   background-image: url('images/bg_back_2.png');
+   background-repeat: no-repeat;
+   background-position: right bottom !important;
+   background-attachment: scroll;
+   background-size: cover;
    box-shadow: 0px 5px 10px #4F4F4F;
 }
 #Layer1
@@ -3028,6 +3171,11 @@ body
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
 }
 #wb_Heading1
 {
@@ -3087,6 +3235,29 @@ body
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: left;
+}
+#Heading2
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   text-align: left;
+   text-transform: none;
 }
 #wb_Image2
 {
@@ -3117,20 +3288,20 @@ body
    visibility: visible;
    display: inline;
 }
-#SlideShow1
+#SlideShow2
 {
-   left: 31px;
-   top: 123px;
+   left: 32px;
+   top: 117px;
    width: 611px;
-   height: 343px;
+   height: 382px;
    visibility: visible;
    display: inline-block;
 }
-#SlideShow1_back
+#SlideShow2_back
 {
    left: 4px;
 }
-#SlideShow1_next
+#SlideShow2_next
 {
 }
 #wb_CssMenu1
@@ -3224,7 +3395,7 @@ body
 #lg_rodape
 {
    left: 0px;
-   top: 1991px;
+   top: 1661px;
    height: 253px;
    visibility: visible;
    display: block;
@@ -3452,9 +3623,12 @@ body
    visibility: visible;
    display: block;
    background-clip: padding-box;
-   background-color: #F5F5F5;
-   background-image: none;
-   background-image: none;
+   background-color: transparent;
+   background-image: url('images/bg_back_2.png');
+   background-repeat: no-repeat;
+   background-position: right bottom !important;
+   background-attachment: scroll;
+   background-size: cover;
    box-shadow: 0px 5px 10px #4F4F4F;
 }
 #Layer1
@@ -3486,11 +3660,16 @@ body
    left: 36px;
    top: 250px;
    width: 310px;
-   height: 150px;
+   height: 63px;
    visibility: visible;
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 24px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
 }
 #wb_Heading1
 {
@@ -3506,7 +3685,7 @@ body
    font-family: Arial;
    font-weight: bold;
    font-style: normal;
-   font-size: 43px;
+   font-size: 24px;
    text-align: center;
    text-transform: none;
 }
@@ -3517,7 +3696,7 @@ body
 #wb_Text2
 {
    left: 12px;
-   top: 419px;
+   top: 341px;
    width: 348px;
    height: 147px;
    visibility: visible;
@@ -3532,8 +3711,8 @@ body
 }
 #wb_YouTube1
 {
-   left: 12px;
-   top: 601px;
+   left: 13px;
+   top: 547px;
    width: 348px;
    height: 195px;
    visibility: visible;
@@ -3542,14 +3721,37 @@ body
 }
 #wb_Heading2
 {
-   left: 46px;
-   top: 32px;
-   width: 278px;
-   height: 57px;
+   left: 112px;
+   top: 25px;
+   width: 151px;
+   height: 33px;
    visibility: visible;
    display: inline;
    margin: 0;
    padding: 0;
+   font-size: 24px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: left;
+}
+#Heading2
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 24px;
+   text-align: left;
+   text-transform: none;
 }
 #wb_Image2
 {
@@ -3565,7 +3767,7 @@ body
 #RollOver9
 {
    left: 95px;
-   top: 865px;
+   top: 806px;
    width: 193px;
    height: 61px;
    visibility: visible;
@@ -3574,26 +3776,26 @@ body
 #RollOver10
 {
    left: 95px;
-   top: 949px;
+   top: 890px;
    width: 193px;
    height: 62px;
    visibility: visible;
    display: inline;
 }
-#SlideShow1
+#SlideShow2
 {
-   left: 13px;
-   top: 115px;
-   width: 346px;
-   height: 195px;
+   left: 15px;
+   top: 89px;
+   width: 344px;
+   height: 222px;
    visibility: visible;
    display: inline-block;
 }
-#SlideShow1_back
+#SlideShow2_back
 {
    left: 4px;
 }
-#SlideShow1_next
+#SlideShow2_next
 {
 }
 #wb_CssMenu1
@@ -3902,8 +4104,7 @@ body
 }
 </style>
 <script src="jquery-3.7.1.min.js"></script>
-<script src="jquery-ui.min.js"></script>
-<script src="wb.slideshow.min.js"></script>
+<script src="lightslider.min.js"></script>
 <script src="wb.overlay.min.js"></script>
 <script src="wb.drilldownmenu.min.js"></script>
 <script src="wwb19.min.js"></script>
@@ -3940,22 +4141,31 @@ $(document).ready(function()
    {
       onScrollText2();
    });
-   $("#SlideShow1").slideshow(
+   var sliderSlideShow2 = $('#SlideShow2-gallery').lightSlider(
    {
-      interval: 5000,
-      type: 'sequence',
-      effect: 'fade',
-      direction: '',
-      pagination: false,
-      effectlength: 2000
+      controls: false,
+      gallery: true,
+      item: 1,
+      loop: true,
+      thumbItem: 10,
+      thumbMargin: 10,
+      galleryMargin: 10,
+      pause: 3000,
+      auto: true,
+      onSliderLoad: function ($el)
+                {
+                   $('#SlideShow2_back').appendTo($el.parent());
+                   $('#SlideShow2_next').appendTo($el.parent());
+                }
+
+});
+   $("#SlideShow2_back a").click(function()
+   {
+      sliderSlideShow2.goToPrevSlide();
    });
-   $("#SlideShow1_back a").click(function()
+   $("#SlideShow2_next a").click(function()
    {
-      $('#SlideShow1').slideshow('previmage');
-   });
-   $("#SlideShow1_next a").click(function()
-   {
-      $('#SlideShow1').slideshow('nextimage');
+      sliderSlideShow2.goToNextSlide();
    });
    $('#OverlayMenu1-overlay').overlay({hideTransition:true});
    $('.OverlayMenu1').drilldownmenu({backText: 'Back'});
@@ -3972,15 +4182,21 @@ $(document).ready(function()
 <div id="Layer1_Container">
 <div id="wb_Heading2">
 <h1 id="Heading2">Screenshots</h1></div>
-<div id="SlideShow1">
-<img class="image" loading="lazy" width="1920" height="1080" src="images/s1_1.png" alt="" title="">
-<img class="image" loading="lazy" width="1920" height="1080" src="images/s1_1_boss.png" style="display:none;" alt="" title="">
-<img class="image" loading="lazy" width="1920" height="1080" src="images/s2_1.png" style="display:none;" alt="" title="">
-<img class="image" loading="lazy" width="1920" height="1080" src="images/s2_2.png" style="display:none;" alt="" title="">
-<img class="image" loading="lazy" width="1920" height="1080" src="images/s2_3.png" style="display:none;" alt="" title="">
-<img class="image" loading="lazy" width="1920" height="1080" src="images/s3.png" style="display:none;" alt="" title="">
-<div id="SlideShow1_back"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
-<div id="SlideShow1_next"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
+<div id="SlideShow2">
+<ul id="SlideShow2-gallery">
+<li data-thumb="images/s3.png" data-src="images/s3.png"><img class="image" loading="lazy" src="images/s3.png" alt="" title=""></li>
+<li data-thumb="images/s2_3.png" data-src="images/s2_3.png"><img class="image" loading="lazy" src="images/s2_3.png" alt="" title=""></li>
+<li data-thumb="images/s2_2.png" data-src="images/s2_2.png"><img class="image" loading="lazy" src="images/s2_2.png" alt="" title=""></li>
+<li data-thumb="images/s2_1.png" data-src="images/s2_1.png"><img class="image" loading="lazy" src="images/s2_1.png" alt="" title=""></li>
+<li data-thumb="images/s1_1_boss.png" data-src="images/s1_1_boss.png"><img class="image" loading="lazy" src="images/s1_1_boss.png" alt="" title=""></li>
+<li data-thumb="images/s1_1.png" data-src="images/s1_1.png"><img class="image" loading="lazy" src="images/s1_1.png" alt="" title=""></li>
+<li data-thumb="images/menu_4.png" data-src="images/menu_4.png"><img class="image" loading="lazy" src="images/menu_4.png" alt="" title=""></li>
+<li data-thumb="images/menu_3.png" data-src="images/menu_3.png"><img class="image" loading="lazy" src="images/menu_3.png" alt="" title=""></li>
+<li data-thumb="images/menu_2.png" data-src="images/menu_2.png"><img class="image" loading="lazy" src="images/menu_2.png" alt="" title=""></li>
+<li data-thumb="images/menu_1.png" data-src="images/menu_1.png"><img class="image" loading="lazy" src="images/menu_1.png" alt="" title=""></li>
+</ul>
+<div id="SlideShow2_back"><a class="carousel-control-prev" role="button"><span class="carousel-control-prev-icon" aria-hidden="true"></span></a></div>
+<div id="SlideShow2_next"><a class="carousel-control-next" role="button"><span class="carousel-control-next-icon" aria-hidden="true"></span></a></div>
 </div>
 </div>
 </div>
