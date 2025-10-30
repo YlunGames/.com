@@ -2889,7 +2889,7 @@ body
 }
 #lg_rodape_Container
 {
-   width: 470px;
+   width: 375px;
 }
 #dhl_banner
 {
@@ -2913,7 +2913,7 @@ body
 }
 #dhl_banner_Container
 {
-   width: 470px;
+   width: 375px;
 }
 #bg_banner
 {
@@ -2931,12 +2931,12 @@ body
 }
 #bg_banner_Container
 {
-   width: 470px;
+   width: 375px;
 }
 #wb_Image1
 {
-   left: 53px;
-   top: 10px;
+   left: 6px;
+   top: 12px;
    width: 209px;
    height: 36px;
    visibility: visible;
@@ -2948,7 +2948,7 @@ body
 {
    left: 0px;
    top: 15px;
-   width: 470px;
+   width: 341px;
    height: 39px;
    visibility: hidden;
    display: none;
@@ -2957,7 +2957,7 @@ body
 }
 #wb_CssMenu1 li
 {
-   width: 120px;
+   width: 20px;
 }
 #wb_CssMenu1 a
 {
@@ -2976,7 +2976,7 @@ body
 }
 #wb_CssMenu1 > ul > li > a
 {
-   width: 110px;
+   width: 10px;
    height: 28px;
    padding: 0 5px 0px 5px;
    line-height: 28px;
@@ -3005,12 +3005,12 @@ body
 }
 #wb_CssMenu1 li li
 {
-   width: 500px;
+   width: 170px;
 }
 #wb_CssMenu1 ul ul a, #wb_CssMenu1 ul :hover ul a
 {
-   width: 490px;
-   padding: 10px 5px 9px 5px;
+   width: 160px;
+   padding: 100px 5px 99px 5px;
    background-color: rgba(132,78,40,0.80);
    border: 0px solid #CCCCCC;
    color: #FFFFFF;
@@ -3034,7 +3034,7 @@ body
 }
 #wb_OverlayMenu1
 {
-   left: 398px;
+   left: 315px;
    top: 6px;
    width: 56px;
    height: 49px;
@@ -3116,8 +3116,8 @@ body
 }
 #wb_ThemeableButton2
 {
-   left: 70px;
-   top: 597px;
+   left: 39px;
+   top: 616px;
    width: 271px;
    height: 68px;
    visibility: visible;
@@ -3135,10 +3135,10 @@ body
 }
 #wb_Text3
 {
-   left: 12px;
+   left: 10px;
    top: 414px;
-   width: 442px;
-   height: 138px;
+   width: 355px;
+   height: 161px;
    visibility: visible;
    display: inline;
 }
@@ -3151,10 +3151,10 @@ body
 }
 #wb_Image2
 {
-   left: 15px;
+   left: 5px;
    top: 56px;
-   width: 381px;
-   height: 243px;
+   width: 334px;
+   height: 196px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -3162,9 +3162,9 @@ body
 }
 #wb_bg_title
 {
-   left: 12px;
+   left: 10px;
    top: 318px;
-   width: 442px;
+   width: 355px;
    height: 72px;
    visibility: visible;
    display: inline;
@@ -3176,10 +3176,10 @@ body
 }
 #wb_Text6
 {
-   left: 15px;
-   top: 372px;
-   width: 439px;
-   height: 115px;
+   left: 10px;
+   top: 355px;
+   width: 355px;
+   height: 138px;
    visibility: visible;
    display: inline;
 }
@@ -3192,10 +3192,10 @@ body
 }
 #wb_Image6
 {
-   left: 25px;
+   left: 0px;
    top: 17px;
-   width: 381px;
-   height: 243px;
+   width: 341px;
+   height: 203px;
    visibility: visible;
    display: inline;
    margin: 0;
@@ -3203,10 +3203,10 @@ body
 }
 #wb_Text7
 {
-   left: 15px;
-   top: 292px;
-   width: 432px;
-   height: 80px;
+   left: 10px;
+   top: 245px;
+   width: 355px;
+   height: 113px;
    visibility: visible;
    display: inline;
 }
@@ -3217,7 +3217,7 @@ body
 }
 #wb_ThemeableButton1
 {
-   left: 70px;
+   left: 39px;
    top: 528px;
    width: 271px;
    height: 68px;
@@ -3256,12 +3256,12 @@ body
 }
 #Banner_1_Container
 {
-   width: 470px;
+   width: 375px;
 }
 #wb_Image3
 {
-   left: 206px;
-   top: 665px;
+   left: 143px;
+   top: 672px;
    width: 59px;
    height: 33px;
    visibility: visible;
@@ -3271,10 +3271,10 @@ body
 }
 #wb_Text2
 {
-   left: 15px;
-   top: 369px;
-   width: 439px;
-   height: 161px;
+   left: 10px;
+   top: 362px;
+   width: 355px;
+   height: 184px;
    visibility: visible;
    display: inline;
 }
@@ -3287,9 +3287,9 @@ body
 }
 #wb_title_banner_1
 {
-   left: 15px;
-   top: 281px;
-   width: 439px;
+   left: 10px;
+   top: 265px;
+   width: 355px;
    height: 72px;
    visibility: visible;
    display: inline;
@@ -3301,8 +3301,8 @@ body
 }
 #wb_Text5
 {
-   left: 112px;
-   top: 290px;
+   left: 65px;
+   top: 286px;
    width: 244px;
    height: 18px;
    visibility: visible;
@@ -3315,7 +3315,7 @@ body
 }
 #wb_Image5
 {
-   left: 135px;
+   left: 94px;
    top: 45px;
    width: 188px;
    height: 83px;
@@ -3326,7 +3326,7 @@ body
 }
 #RollOver5
 {
-   left: 107px;
+   left: 66px;
    top: 217px;
    width: 33px;
    height: 34px;
@@ -3335,7 +3335,7 @@ body
 }
 #RollOver6
 {
-   left: 174px;
+   left: 133px;
    top: 217px;
    width: 33px;
    height: 34px;
@@ -3344,7 +3344,7 @@ body
 }
 #RollOver4
 {
-   left: 292px;
+   left: 251px;
    top: 219px;
    width: 33px;
    height: 32px;
@@ -3353,9 +3353,9 @@ body
 }
 #wb_Text1
 {
-   left: 15px;
+   left: 10px;
    top: 315px;
-   width: 439px;
+   width: 355px;
    height: 36px;
    visibility: visible;
    display: inline;
@@ -3367,7 +3367,7 @@ body
 }
 #RollOver8
 {
-   left: 239px;
+   left: 198px;
    top: 217px;
    width: 33px;
    height: 34px;
@@ -3376,7 +3376,7 @@ body
 }
 #wb_TextMenu1
 {
-   left: 61px;
+   left: 20px;
    top: 152px;
    width: 289px;
    height: 28px;
@@ -3391,8 +3391,8 @@ body
 }
 #wb_Image4
 {
-   left: 111px;
-   top: 90px;
+   left: 74px;
+   top: 86px;
    width: 189px;
    height: 153px;
    visibility: visible;
@@ -3402,9 +3402,9 @@ body
 }
 #wb_Text8
 {
-   left: 15px;
-   top: 584px;
-   width: 439px;
+   left: 10px;
+   top: 590px;
+   width: 355px;
    height: 72px;
    visibility: visible;
    display: inline;
@@ -3430,6 +3430,6 @@ body
 }
 #lg_navbar_Container
 {
-   width: 470px;
+   width: 375px;
 }
 }

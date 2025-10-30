@@ -1078,7 +1078,7 @@ body
    text-align: center;
 }
 }
-@media only screen and (max-width: 1279px)
+@media only screen and (min-width: 768px) and (max-width: 1279px)
 {
 body
 {
@@ -1342,6 +1342,300 @@ body
    left: 63px;
    top: 928px;
    width: 623px;
+   height: 24px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-size: 21px;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+}
+@media only screen and (max-width: 767px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#SlideShow2
+{
+   left: 10px;
+   top: 100px;
+   width: 356px;
+   height: 227px;
+   visibility: visible;
+   display: inline-block;
+}
+#SlideShow2_back
+{
+   left: 4px;
+}
+#SlideShow2_next
+{
+}
+#lg_rodape
+{
+   left: 0px;
+   top: 1459px;
+   height: 363px;
+   visibility: visible;
+   display: block;
+}
+#lg_rodape
+{
+   width: 100%;
+}
+#lg_rodape_Container
+{
+   width: 375px;
+}
+#Layer1
+{
+   left: 0px;
+   top: 1076px;
+   height: 385px;
+   visibility: visible;
+   display: block;
+}
+#Layer1
+{
+   left: 0%;
+   width: 100%;
+}
+#Layer1_Container
+{
+   width: 375px;
+}
+#wb_Text5
+{
+   left: 66px;
+   top: 284px;
+   width: 244px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 103px;
+   top: 31px;
+   width: 188px;
+   height: 83px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#RollOver5
+{
+   left: 75px;
+   top: 203px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver6
+{
+   left: 142px;
+   top: 203px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver4
+{
+   left: 260px;
+   top: 205px;
+   width: 33px;
+   height: 32px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 10px;
+   top: 315px;
+   width: 356px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#RollOver8
+{
+   left: 207px;
+   top: 203px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_TextMenu1
+{
+   left: 29px;
+   top: 138px;
+   width: 289px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 0px 0 50px;
+}
+#title
+{
+   left: 0px;
+   top: 0px;
+   height: 1074px;
+   visibility: visible;
+   display: block;
+   box-shadow: 0px 5px 10px #4F4F4F;
+}
+#title
+{
+   left: 0%;
+   width: 100%;
+}
+#title_Container
+{
+   width: 375px;
+}
+#wb_Heading1
+{
+   left: 10px;
+   top: 528px;
+   width: 355px;
+   height: 140px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+   font-size: 43px;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+}
+#wb_Heading1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: center;
+}
+#Heading1
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   text-align: center;
+   text-transform: none;
+}
+#Heading1 a
+{
+   color: inherit;
+}
+#wb_Image2
+{
+   left: 17px;
+   top: 31px;
+   width: 312px;
+   height: 198px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text3
+{
+   left: 10px;
+   top: 768px;
+   width: 355px;
+   height: 144px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text3
+{
+   font-size: 21px;
+   margin: 0;
+   padding: 0;
+   text-align: justify;
+}
+#RollOver9
+{
+   left: 77px;
+   top: 980px;
+   width: 193px;
+   height: 61px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Heading2
+{
+   left: 10px;
+   top: 24px;
+   width: 355px;
+   height: 57px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Heading2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   text-align: center;
+}
+#Heading2
+{
+   color: #645600;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   text-align: center;
+   text-transform: none;
+}
+#wb_YouTube2
+{
+   left: 10px;
+   top: 266px;
+   width: 355px;
+   height: 199px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#wb_Text2
+{
+   left: 10px;
+   top: 936px;
+   width: 355px;
    height: 24px;
    visibility: visible;
    display: inline;
