@@ -1,0 +1,1963 @@
+body
+{
+   background-color: #FFFFFF;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+#lg_rodape
+{
+   background-color: transparent;
+   background-image: url('images/ylun_back.png');
+   background-repeat: repeat;
+   background-position: center bottom;
+   border-radius: 0px;
+}
+#lg_rodape-overlay
+{
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-image: linear-gradient(315deg, rgba(132,78,40,0.00) 0%, #844E28 100%);
+}
+#wb_Image1
+{
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_CssMenu1
+{
+   border: 0px solid #C0C0C0;
+   border-radius: 0px;
+   background-color: transparent;
+   margin: 0;
+   text-align: center;
+}
+#wb_CssMenu1 ul
+{
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+}
+#wb_CssMenu1 li
+{
+   float: left;
+   margin: 0;
+   padding: 0px 4px 0px 0px;
+   width: 120px;
+}
+#wb_CssMenu1 a
+{
+   display: block;
+   float: left;
+   color: #FFFFFF;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 21px;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: none;
+   text-align: center;
+   vertical-align: middle;
+}
+#wb_CssMenu1 > ul > li > a
+{
+   width: 110px;
+   height: 28px;
+   padding: 0 5px 0px 5px;
+   line-height: 28px;
+}
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover, #wb_CssMenu1 .active
+{
+   color: #FECC30;
+   border: 0px solid #000000;
+   background-color: rgba(153,67,30,0.00);
+   background-image: none;
+}
+#wb_CssMenu1 li.firstmain
+{
+   padding-left: 0px;
+}
+#wb_CssMenu1 li.lastmain
+{
+   padding-right: 0px;
+}
+#wb_CssMenu1 li:hover, #wb_CssMenu1 li a:hover
+{
+   position: relative;
+}
+#wb_CssMenu1 a.withsubmenu
+{
+   padding: 0 5px 0 5px;
+   background-image: none;
+}
+#wb_CssMenu1 li:hover a.withsubmenu, #wb_CssMenu1 a.withsubmenu:hover
+{
+   background-image: none;
+}
+#wb_CssMenu1 ul ul
+{
+   position: absolute;
+   left: 0;
+   top: 0;
+   visibility: hidden;
+   width: 540px;
+   height: auto;
+   border: none;
+   background-color: transparent;
+}
+#wb_CssMenu1 ul :hover ul
+{
+   left: -20px;
+   top: 28px;
+   padding-top: 0px;
+   visibility: visible;
+}
+#wb_CssMenu1 .firstmain:hover ul
+{
+   left: -20px;
+}
+#wb_CssMenu1 li li
+{
+   width: 500px;
+   padding: 0 20px 0px 20px;
+   border: 0px solid #C0C0C0;
+   border-width: 0 0px;
+}
+#wb_CssMenu1 li li.firstitem
+{
+   border-top: 0px #C0C0C0 solid;
+}
+#wb_CssMenu1 li li.lastitem
+{
+   border-bottom: 0px #C0C0C0 solid;
+}
+#wb_CssMenu1 li li.lastitem
+{
+   padding-bottom: 20px;
+}
+#wb_CssMenu1 ul ul a, #wb_CssMenu1 ul :hover ul a
+{
+   float: none;
+   margin: 0;
+   width: 490px;
+   height: auto;
+   white-space: normal;
+   padding: 10px 5px 9px 5px;
+   background-color: rgba(132,78,40,0.80);
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 21px;
+   font-style: italic;
+   line-height: 21px;
+   text-align: center;
+   text-decoration: none;
+   text-transform: none;
+}
+#wb_CssMenu1 ul :hover ul .firstitem a
+{
+   margin-top: 20px;
+}
+#wb_CssMenu1 ul ul :hover a, #wb_CssMenu1 ul ul a:hover, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul :hover ul :hover a, #wb_CssMenu1 ul ul :hover ul a:hover, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul :hover ul a.active
+{
+   background-color: #DAA520;
+   background-image: none;
+   border: 0px solid #645600;
+   color: #FECB31;
+}
+#wb_CssMenu1 br
+{
+   clear: both;
+   font-size: 1px;
+   height: 0;
+   line-height: 0;
+}
+#CssMenu1 li i
+{
+   font-size: 21px;
+   margin-right: 5px;
+   width: 23px;
+}
+@media all and (max-width:320px) 
+{
+#wb_CssMenu1 ul
+{
+   width: 100%;
+}
+#wb_CssMenu1 li
+{
+   padding: 0 0px 4px 0px !important;
+   width: 100% !important;
+}
+#wb_CssMenu1 a
+{
+   box-sizing: border-box;
+   float: none !important;
+   width: 100% !important;
+}
+#wb_CssMenu1 a.withsubmenu
+{
+   width: 100% !important;
+}
+
+}
+#wb_OverlayMenu1
+{
+   margin: 0;
+}
+#OverlayMenu1
+{
+   background-color: #424242;
+   background-image: none;
+   border: 0px solid #424242;
+   border-radius: 0px;
+}
+#OverlayMenu1:hover
+{
+   background-color: #CCCCCC;
+   background-image: none;
+   border-color: #424242;
+}
+#OverlayMenu1
+{
+   display: block;
+   width: 56px;
+   height: 49px;
+   position: absolute;
+   overflow: hidden;
+}
+#OverlayMenu1 .line
+{
+   width: 32px;
+   height: 6px;
+   background: #FFFFFF;
+   display: block;
+   margin: 6px auto;
+   transition: all 0.3s ease-in-out;
+}
+#OverlayMenu1:hover .line
+{
+   background: #424242;
+}
+#OverlayMenu1 .line:first-child
+{
+   margin-top: 8px;
+}
+#OverlayMenu1-close
+{
+   background: transparent;
+   font-size: 10px;
+   height: 2.8em; 
+   outline: none;
+   position: absolute;
+   right: 10px;
+   text-align: left;
+   top: 10px;
+   width: 3em; 
+}
+#OverlayMenu1-close:before, #OverlayMenu1-close:after
+{
+   background: #FFFFFF;
+   content: "";
+   display: block;
+   height: 0.6em;
+   left: 0;
+   opacity: 1;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+#OverlayMenu1-close span
+{
+   background: #FFFFFF;
+   height: 0.6em;
+   margin-top: -0.3em;
+   position: absolute;
+   top: 50%;
+   transform-origin: 50% 50%;
+   width: 100%;
+}
+#OverlayMenu1-close span::after
+{
+   background: #FFFFFF;
+   content: "";
+   display: block;
+   height: 0.6em;
+   position: absolute;
+   transform-origin: 50% 50%;
+   width: 100%;
+}
+#OverlayMenu1-close:before
+{
+   margin-top: -0.3em;
+   opacity: 0;
+   top: 50%;
+}
+#OverlayMenu1-close:after
+{
+   bottom: 50%;
+   opacity: 0;
+}
+#OverlayMenu1-close span
+{
+   background: #FFFFFF;
+   transform: rotate(-45deg);
+}
+#OverlayMenu1-close span:after
+{
+   background: #FFFFFF;
+   transform: rotate(-90deg);
+}
+#OverlayMenu1-overlay
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+   left: 0;
+   overflow-y: auto;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: -1;
+   background-color: rgba(122,122,122,0.87);
+}
+#OverlayMenu1-overlay ul
+{
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   text-decoration: none;
+   text-transform: none;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.OverlayMenu1
+{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+   width: 100%;
+   max-width: 970px;
+}
+.OverlayMenu1 a
+{
+   text-decoration: none;
+}
+.OverlayMenu1 ul
+{
+   list-style: none;
+   padding: 0;
+   text-align: center;
+}
+.OverlayMenu1 li
+{
+   position: relative;
+}
+.OverlayMenu1 li a
+{
+   display: block;
+   position: relative;
+   padding: 10px 15px 10px 15px;
+   color: #FFFFFF;
+   outline: none;
+}
+.OverlayMenu1 li a:hover
+{
+   color: #424242;
+   background-color: #CCCCCC;
+}
+#OverlayMenu1-overlay
+{
+   opacity: 0;
+   visibility: hidden;
+   transition: opacity 400ms, visibility 0s 400ms;
+}
+#OverlayMenu1-overlay.show
+{
+   opacity: 1;
+   visibility: visible;
+   transition: opacity 400ms;
+}
+#OverlayMenu1-overlay ul li a
+{
+   opacity: 0;
+   transform: translateX(100px) translateZ(-1000px);
+   transition: transform 400ms, opacity 400ms;
+}
+#OverlayMenu1-overlay.show ul li a
+{
+   opacity: 1;
+   transform: translateX(0) translateZ(0);
+}
+#OverlayMenu1-overlay.show ul li:nth-child(2) a
+{
+   transition-delay: 50ms;
+}
+.OverlayMenu1 li.drilldown-back > a 
+{
+   padding-left: 40px;
+   background: rgba(0,0,0,0.1);
+}
+.OverlayMenu1 li.drilldown-back > a:hover
+{
+   background-color: #CCCCCC;
+}
+.OverlayMenu1 li.drilldown-back a:after,
+.OverlayMenu1 li > a:not(:only-child):after
+{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   display: inline-block;
+   width: 0;
+   height: 0;
+   margin-left: 9px;
+   border-left: 9px solid #FFFFFF;
+   border-top: 7px solid transparent;
+   border-bottom: 7px solid transparent;
+   border-right: 0 dotted;
+   content: " ";
+}
+.OverlayMenu1 li.drilldown-back a:after
+{
+   left: 9px;
+   color: #FFFFFF;
+   transform: translateY(-50%) rotate(180deg);
+}
+.OverlayMenu1 li.drilldown-back a:hover:after,
+.OverlayMenu1 li > a:not(:only-child):hover:after
+{
+   border-left-color: #424242;
+}
+.OverlayMenu1 li > a:after
+{
+   color: rgba(0,0,0,0.15);
+   right: 10px;
+}
+.OverlayMenu1 .drilldown-menu 
+{
+   margin: 0;
+   width: 100%;
+}
+.OverlayMenu1 li .drilldown-submenu 
+{
+   display: none;
+}
+.drilldown-menu.drilldown-subview li,
+.drilldown-menu.drilldown-subview li.drilldown-subviewopen > a,
+.drilldown-menu.drilldown-subview li.drilldown-subview > a 
+{
+   display: none;
+}
+.drilldown-menu.drilldown-subview li.drilldown-subview,
+.drilldown-menu.drilldown-subview li.drilldown-subview .drilldown-submenu,
+.drilldown-menu.drilldown-subview li.drilldown-subviewopen,
+.drilldown-menu.drilldown-subview li.drilldown-subviewopen > .drilldown-submenu,
+.drilldown-menu.drilldown-subview li.drilldown-subviewopen > .drilldown-submenu > li 
+{
+   display: block;
+}
+.OverlayMenu1 > .drilldown-submenu
+{
+   left: 0;
+   margin: 0;
+   position: absolute;
+   top: 50px;
+   width: 100%;
+}
+#OverlayMenu1-overlay .overlay-icon
+{
+   margin: 0 10px 0 0 ;
+}
+#OverlayMenu1-social
+{
+   padding: 40px 0 0 0;
+}
+#OverlayMenu1-social .social-icon 
+{
+   border-radius: 50%;
+   background-color: #FFFFFF;
+   color: #7A7A7A;
+   display: inline-block;
+   font-size: 19px;
+   margin: 0 .5em;
+   padding: 7px;
+   transition: all .2s linear 0s;
+   width: 19px;
+}
+#OverlayMenu1-social .social-icon:hover 
+{
+   background-color: #424242;
+   color: #CCCCCC;
+}
+.OverlayMenu1-effect
+{
+   transition: all 500ms linear;
+}
+#RollOver1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver1 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver1 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver1 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver1 .hover
+{
+   visibility: hidden;
+}
+#RollOver1:hover .hover
+{
+   visibility: visible;
+}
+#RollOver1:hover span
+{
+   visibility: hidden;
+}
+#RollOver1 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver2 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver2 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver2 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver2 .hover
+{
+   visibility: hidden;
+}
+#RollOver2:hover .hover
+{
+   visibility: visible;
+}
+#RollOver2:hover span
+{
+   visibility: hidden;
+}
+#RollOver2 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver3 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver3 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver3 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver3 .hover
+{
+   visibility: hidden;
+}
+#RollOver3:hover .hover
+{
+   visibility: visible;
+}
+#RollOver3:hover span
+{
+   visibility: hidden;
+}
+#RollOver3 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver7
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver7 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver7 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver7 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver7 .hover
+{
+   visibility: hidden;
+}
+#RollOver7:hover .hover
+{
+   visibility: visible;
+}
+#RollOver7:hover span
+{
+   visibility: hidden;
+}
+#RollOver7 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#Banner_1
+{
+   background-color: #F5F5F5;
+   background-image: none;
+   border-radius: 0px;
+   box-shadow: 0px 5px 5px #4F4F4F;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: justify;
+}
+#wb_Text2
+{
+   color: #673A1F;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 29px;
+}
+#wb_Text2 div
+{
+   text-align: justify;
+}
+#lg_navbar
+{
+   background-color: rgba(103,58,31,0.80);
+   background-image: none;
+   border-radius: 0px;
+}
+#wb_title_banner_1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_title_banner_1 div
+{
+   text-align: center;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text5 div
+{
+   text-align: left;
+}
+#wb_Image5
+{
+   vertical-align: top;
+}
+#Image5
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver5
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver5 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver5 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver5 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver5 .hover
+{
+   visibility: hidden;
+}
+#RollOver5:hover .hover
+{
+   visibility: visible;
+}
+#RollOver5:hover span
+{
+   visibility: hidden;
+}
+#RollOver5 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver6
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver6 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver6 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver6 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver6 .hover
+{
+   visibility: hidden;
+}
+#RollOver6:hover .hover
+{
+   visibility: visible;
+}
+#RollOver6:hover span
+{
+   visibility: hidden;
+}
+#RollOver6 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#RollOver4
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver4 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver4 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver4 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver4 .hover
+{
+   visibility: hidden;
+}
+#RollOver4:hover .hover
+{
+   visibility: visible;
+}
+#RollOver4:hover span
+{
+   visibility: hidden;
+}
+#RollOver4 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text1 div
+{
+   text-align: center;
+}
+#RollOver8
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   margin: 0;
+}
+#RollOver8 a
+{
+   display: block;
+   position: relative;
+   height: 100%;
+   width: 100%;
+}
+#RollOver8 a img
+{
+   position: absolute;
+   z-index: 1;
+   border-width: 0;
+}
+#RollOver8 span
+{
+   display: block;
+   height: 100%;
+   width: 100%;
+   position: absolute;
+   z-index: 2;
+}
+#RollOver8 .hover
+{
+   visibility: hidden;
+}
+#RollOver8:hover .hover
+{
+   visibility: visible;
+}
+#RollOver8:hover span
+{
+   visibility: hidden;
+}
+#RollOver8 img
+{
+   border-width: 0;
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_TextMenu1
+{
+   background-color: transparent;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: none;
+   font-size: 24px;
+   margin: 0;
+   text-align: right;
+   overflow: hidden;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 0px 0 50px;
+}
+#wb_TextMenu1 a
+{
+   color: inherit;
+   text-decoration: inherit;
+}
+#RollOver1
+{
+   position: absolute;
+   left: 1895px;
+   top: 17px;
+   width: 28px;
+   height: 28px;
+   overflow: hidden;
+   z-index: 13;
+}
+#wb_CssMenu1
+{
+   position: absolute;
+   left: 1332px;
+   top: 15px;
+   width: 620px;
+   height: 39px;
+   z-index: 11;
+}
+#RollOver6
+{
+   position: absolute;
+   left: 1566px;
+   top: 150px;
+   width: 33px;
+   height: 34px;
+   overflow: hidden;
+   z-index: 3;
+}
+#lg_rodape_Container
+{
+   width: 2700px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#RollOver7
+{
+   position: absolute;
+   left: 1987px;
+   top: 18px;
+   width: 28px;
+   height: 28px;
+   overflow: hidden;
+   z-index: 16;
+}
+#wb_OverlayMenu1
+{
+   position: absolute;
+   left: 500px;
+   top: 6px;
+   width: 56px;
+   height: 49px;
+   visibility: hidden;
+   z-index: 12;
+}
+#wb_Image1
+{
+   position: absolute;
+   left: 628px;
+   top: 12px;
+   width: 209px;
+   height: 36px;
+   z-index: 10;
+}
+#RollOver4
+{
+   position: absolute;
+   left: 1668px;
+   top: 150px;
+   width: 33px;
+   height: 34px;
+   overflow: hidden;
+   z-index: 4;
+}
+#RollOver5
+{
+   position: absolute;
+   left: 1515px;
+   top: 152px;
+   width: 33px;
+   height: 34px;
+   overflow: hidden;
+   z-index: 2;
+}
+#wb_Text5
+{
+   position: absolute;
+   left: 629px;
+   top: 143px;
+   width: 261px;
+   height: 18px;
+   z-index: 0;
+}
+#lg_rodape
+{
+   position: absolute;
+   text-align: center;
+   left: 0px;
+   top: 715px;
+   width: 100%;
+   height: 237px;
+   z-index: 17;
+}
+#wb_TextMenu1
+{
+   position: absolute;
+   left: 1345px;
+   top: 53px;
+   width: 356px;
+   height: 28px;
+   z-index: 7;
+}
+#wb_Image5
+{
+   position: absolute;
+   left: 629px;
+   top: 42px;
+   width: 188px;
+   height: 83px;
+   z-index: 1;
+}
+#lg_navbar_Container
+{
+   width: 2700px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#wb_title_banner_1
+{
+   position: absolute;
+   left: 892px;
+   top: 110px;
+   width: 918px;
+   height: 60px;
+   text-align: center;
+   z-index: 9;
+}
+#Banner_1_Container
+{
+   width: 2700px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
+}
+#RollOver8
+{
+   position: absolute;
+   left: 1617px;
+   top: 150px;
+   width: 33px;
+   height: 34px;
+   overflow: hidden;
+   z-index: 6;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 628px;
+   top: 170px;
+   width: 557px;
+   height: 18px;
+   text-align: center;
+   z-index: 5;
+}
+#wb_Text2
+{
+   position: absolute;
+   left: 891px;
+   top: 214px;
+   width: 918px;
+   height: 396px;
+   text-align: justify;
+   z-index: 8;
+}
+#lg_navbar
+{
+   position: absolute;
+   text-align: center;
+   left: 0%;
+   top: 0px;
+   width: 100%;
+   height: 62px;
+   z-index: 19;
+}
+#Banner_1
+{
+   position: absolute;
+   text-align: center;
+   left: 0%;
+   top: 0px;
+   width: 100%;
+   height: 714px;
+   z-index: 18;
+}
+#RollOver2
+{
+   position: absolute;
+   left: 2034px;
+   top: 17px;
+   width: 28px;
+   height: 28px;
+   overflow: hidden;
+   z-index: 14;
+}
+#RollOver3
+{
+   position: absolute;
+   left: 1941px;
+   top: 17px;
+   width: 28px;
+   height: 28px;
+   overflow: hidden;
+   z-index: 15;
+}
+@media only screen and (min-width: 1280px) and (max-width: 2699px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#lg_rodape
+{
+   left: 0px;
+   top: 793px;
+   height: 173px;
+   visibility: visible;
+   display: block;
+}
+#lg_rodape
+{
+   width: 100%;
+}
+#lg_rodape_Container
+{
+   width: 1280px;
+}
+#wb_Image1
+{
+   left: 19px;
+   top: 12px;
+   width: 209px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_CssMenu1
+{
+   left: 410px;
+   top: 13px;
+   width: 620px;
+   height: 39px;
+   visibility: visible;
+   display: block;
+   margin: 0;
+   text-align: center;
+}
+#wb_CssMenu1 li
+{
+   width: 120px;
+}
+#wb_CssMenu1 a
+{
+   color: #FFFFFF;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 21px;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: none;
+   text-align: center;
+}
+#wb_CssMenu1 > ul > li > a
+{
+   width: 110px;
+   height: 28px;
+   padding: 0 5px 0px 5px;
+   line-height: 28px;
+}
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover, #wb_CssMenu1 .active
+{
+   color: #FECC30;
+   border: 0px solid #000000;
+   background-color: rgba(153,67,30,0.00);
+   background-image: none;
+}
+#wb_CssMenu1 a.withsubmenu
+{
+   padding: 0 5px 0 5px;
+}
+#wb_CssMenu1 ul :hover ul
+{
+   left: -20px;
+   top: 28px;
+   padding-top: 0px;
+   visibility: visible;
+}
+#wb_CssMenu1 .firstmain:hover ul
+{
+   left: -20px;
+}
+#wb_CssMenu1 li li
+{
+   width: 500px;
+}
+#wb_CssMenu1 ul ul a, #wb_CssMenu1 ul :hover ul a
+{
+   width: 490px;
+   padding: 10px 5px 9px 5px;
+   background-color: rgba(132,78,40,0.80);
+   border: 0px solid #CCCCCC;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 21px;
+   font-style: italic;
+   line-height: 21px;
+   text-decoration: none;
+   text-transform: none;
+}
+#wb_CssMenu1 ul ul :hover a, #wb_CssMenu1 ul ul a:hover, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul :hover ul :hover a, #wb_CssMenu1 ul ul :hover ul a:hover, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul :hover ul a.active
+{
+   background-color: #DAA520;
+   border: 0px solid #645600;
+   color: #FECB31;
+}
+#wb_CssMenu1 li
+{
+   padding: 0px 4px 0px 0px;
+}
+#wb_OverlayMenu1
+{
+   left: 500px;
+   top: 6px;
+   width: 56px;
+   height: 49px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+}
+#OverlayMenu1
+{
+   background-color: #424242;
+   background-image: none;
+   border: 0px solid #424242;
+   border-radius: 0px;
+   width: 56px;
+   height: 49px;
+}
+#OverlayMenu1:hover
+{
+   background-color: #CCCCCC;
+   background-image: none;
+   border-color: #424242;
+}
+#OverlayMenu1 .line
+{
+   background: #FFFFFF;
+}
+#OverlayMenu1:hover .line
+{
+   background: #424242;
+}
+#OverlayMenu1 .line
+{
+   top: 4px;
+}
+#OverlayMenu1 .line:first-child
+{
+   margin-top: 8px;
+}
+#OverlayMenu1-overlay ul
+{
+   font-size: 19px;
+   text-align: center;
+}
+#RollOver1
+{
+   left: 1087px;
+   top: 16px;
+   width: 28px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver2
+{
+   left: 1226px;
+   top: 17px;
+   width: 28px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver3
+{
+   left: 1133px;
+   top: 15px;
+   width: 28px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver7
+{
+   left: 1179px;
+   top: 16px;
+   width: 28px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+}
+#Banner_1
+{
+   left: 0px;
+   top: 0px;
+   height: 796px;
+   visibility: visible;
+   display: block;
+}
+#Banner_1
+{
+   left: 0%;
+   width: 100%;
+}
+#Banner_1_Container
+{
+   width: 1280px;
+}
+#wb_Text2
+{
+   left: 181px;
+   top: 273px;
+   width: 918px;
+   height: 393px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-size: 29px;
+   margin: 0;
+   padding: 0;
+   text-align: justify;
+}
+#lg_navbar
+{
+   left: 0px;
+   top: 0px;
+   height: 61px;
+   visibility: visible;
+   display: block;
+   box-shadow: 0px 0px 0px #4F4F4F;
+}
+#lg_navbar
+{
+   left: 0%;
+   width: 100%;
+}
+#lg_navbar_Container
+{
+   width: 1280px;
+}
+#wb_title_banner_1
+{
+   left: 185px;
+   top: 170px;
+   width: 918px;
+   height: 60px;
+   visibility: visible;
+   display: inline;
+}
+#wb_title_banner_1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text5
+{
+   left: 123px;
+   top: 110px;
+   width: 239px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 122px;
+   top: 22px;
+   width: 146px;
+   height: 67px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#RollOver5
+{
+   left: 1016px;
+   top: 110px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver6
+{
+   left: 962px;
+   top: 110px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver4
+{
+   left: 1125px;
+   top: 109px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 123px;
+   top: 129px;
+   width: 560px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#RollOver8
+{
+   left: 1070px;
+   top: 108px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_TextMenu1
+{
+   left: 827px;
+   top: 41px;
+   width: 333px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 0px 0 50px;
+}
+}
+@media only screen and (max-width: 1279px)
+{
+body
+{
+   background-color: #FFFFFF;
+   background-image: none;
+}
+#lg_rodape
+{
+   left: 0px;
+   top: 1035px;
+   height: 363px;
+   visibility: visible;
+   display: block;
+}
+#lg_rodape
+{
+   width: 100%;
+}
+#lg_rodape_Container
+{
+   width: 768px;
+}
+#wb_Image1
+{
+   left: 53px;
+   top: 10px;
+   width: 209px;
+   height: 36px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_CssMenu1
+{
+   left: 0px;
+   top: 15px;
+   width: 470px;
+   height: 39px;
+   visibility: hidden;
+   display: none;
+   margin: 0;
+   text-align: center;
+}
+#wb_CssMenu1 li
+{
+   width: 120px;
+}
+#wb_CssMenu1 a
+{
+   color: #FFFFFF;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+   font-family: Arial;
+   font-weight: bold;
+   font-size: 21px;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: none;
+   text-align: center;
+}
+#wb_CssMenu1 > ul > li > a
+{
+   width: 110px;
+   height: 28px;
+   padding: 0 5px 0px 5px;
+   line-height: 28px;
+}
+#wb_CssMenu1 li:hover a, #wb_CssMenu1 a:hover, #wb_CssMenu1 .active
+{
+   color: #FECC30;
+   border: 0px solid #000000;
+   background-color: rgba(153,67,30,0.00);
+   background-image: none;
+}
+#wb_CssMenu1 a.withsubmenu
+{
+   padding: 0 5px 0 5px;
+}
+#wb_CssMenu1 ul :hover ul
+{
+   left: -20px;
+   top: 28px;
+   padding-top: 0px;
+   visibility: visible;
+}
+#wb_CssMenu1 .firstmain:hover ul
+{
+   left: -20px;
+}
+#wb_CssMenu1 li li
+{
+   width: 500px;
+}
+#wb_CssMenu1 ul ul a, #wb_CssMenu1 ul :hover ul a
+{
+   width: 490px;
+   padding: 10px 5px 9px 5px;
+   background-color: rgba(132,78,40,0.80);
+   border: 0px solid #CCCCCC;
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 21px;
+   font-style: italic;
+   line-height: 21px;
+   text-decoration: none;
+   text-transform: none;
+}
+#wb_CssMenu1 ul ul :hover a, #wb_CssMenu1 ul ul a:hover, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul :hover ul :hover a, #wb_CssMenu1 ul ul :hover ul a:hover, #wb_CssMenu1 ul ul a.active, #wb_CssMenu1 ul ul :hover ul a.active
+{
+   background-color: #DAA520;
+   border: 0px solid #645600;
+   color: #FECB31;
+}
+#wb_CssMenu1 li
+{
+   padding: 0px 4px 0px 0px;
+}
+#wb_OverlayMenu1
+{
+   left: 672px;
+   top: 6px;
+   width: 56px;
+   height: 49px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#OverlayMenu1
+{
+   background-color: rgba(66,66,66,0.00);
+   background-image: none;
+   border: 0px solid #424242;
+   border-radius: 0px;
+   width: 56px;
+   height: 49px;
+}
+#OverlayMenu1:hover
+{
+   background-color: rgba(254,203,49,0.00);
+   background-image: none;
+   border-color: #424242;
+}
+#OverlayMenu1 .line
+{
+   background: #FFFFFF;
+}
+#OverlayMenu1:hover .line
+{
+   background: #424242;
+}
+#OverlayMenu1 .line
+{
+   top: 4px;
+}
+#OverlayMenu1 .line:first-child
+{
+   margin-top: 8px;
+}
+#OverlayMenu1-overlay ul
+{
+   font-size: 19px;
+   text-align: center;
+}
+#RollOver1
+{
+   left: 10px;
+   top: 10px;
+   width: 33px;
+   height: 34px;
+   visibility: hidden;
+   display: none;
+}
+#RollOver2
+{
+   left: 10px;
+   top: 10px;
+   width: 33px;
+   height: 34px;
+   visibility: hidden;
+   display: none;
+}
+#RollOver3
+{
+   left: 10px;
+   top: 10px;
+   width: 33px;
+   height: 34px;
+   visibility: hidden;
+   display: none;
+}
+#RollOver7
+{
+   left: 10px;
+   top: 10px;
+   width: 33px;
+   height: 34px;
+   visibility: hidden;
+   display: none;
+}
+#Banner_1
+{
+   left: 0px;
+   top: 0px;
+   height: 1034px;
+   visibility: visible;
+   display: block;
+}
+#Banner_1
+{
+   left: 0%;
+   width: 100%;
+}
+#Banner_1_Container
+{
+   width: 768px;
+}
+#wb_Text2
+{
+   left: 51px;
+   top: 345px;
+   width: 664px;
+   height: 528px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-size: 29px;
+   margin: 0;
+   padding: 0;
+   text-align: justify;
+}
+#lg_navbar
+{
+   left: 0px;
+   top: 0px;
+   height: 60px;
+   visibility: visible;
+   display: block;
+   box-shadow: 0px 0px 0px #4F4F4F;
+}
+#lg_navbar
+{
+   left: 0%;
+   width: 100%;
+}
+#lg_navbar_Container
+{
+   width: 768px;
+}
+#wb_title_banner_1
+{
+   left: 53px;
+   top: 182px;
+   width: 662px;
+   height: 60px;
+   visibility: visible;
+   display: inline;
+}
+#wb_title_banner_1
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text5
+{
+   left: 262px;
+   top: 306px;
+   width: 244px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text5
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Image5
+{
+   left: 290px;
+   top: 21px;
+   width: 188px;
+   height: 83px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#RollOver5
+{
+   left: 262px;
+   top: 193px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver6
+{
+   left: 329px;
+   top: 193px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#RollOver4
+{
+   left: 447px;
+   top: 195px;
+   width: 33px;
+   height: 32px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   left: 105px;
+   top: 324px;
+   width: 558px;
+   height: 18px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text1
+{
+   margin: 0;
+   padding: 0;
+}
+#RollOver8
+{
+   left: 394px;
+   top: 193px;
+   width: 33px;
+   height: 34px;
+   visibility: visible;
+   display: inline;
+}
+#wb_TextMenu1
+{
+   left: 216px;
+   top: 128px;
+   width: 289px;
+   height: 28px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   text-align: right;
+}
+#wb_TextMenu1 span
+{
+   margin: 0 0px 0 50px;
+}
+}
