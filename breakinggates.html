@@ -21,6 +21,7 @@ $(document).ready(function()
 {
    $('#wb_Heading1').addClass('visibility-hidden');
    $('#wb_Text3').addClass('visibility-hidden');
+   $('#wb_Heading4').addClass('visibility-hidden');
    var sliderSlideShow2 = $('#SlideShow2-gallery').lightSlider(
    {
       controls: false,
@@ -30,7 +31,7 @@ $(document).ready(function()
       thumbItem: 3,
       thumbMargin: 10,
       galleryMargin: 10,
-      pause: 3000,
+      pause: 4000,
       auto: true,
       onSliderLoad: function ($el)
                 {
@@ -75,6 +76,20 @@ $(document).ready(function()
    {
       onScrollText3();
    });
+   function onScrollHeading4()
+   {
+      var $obj = $("#wb_Heading4");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('wb_Heading4', 'animate-fade-in-down', 100, 700);
+      }
+   }
+   onScrollHeading4();
+   $(window).scroll(function(event)
+   {
+      onScrollHeading4();
+   });
 });
 </script>
 </head>
@@ -82,42 +97,174 @@ $(document).ready(function()
 <footer id="lg_rodape">
 <div id="lg_rodape-overlay"></div>
 <div id="lg_rodape_Container">
-<div id="wb_Text5">
-<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">2025 Powered by Ylun Games.</span></div>
-<div id="wb_Image5">
-<a href="https://ylungames.com"><img src="images/rodape_logo.png" id="Image5" alt="" width="188" height="84"></a></div>
-<div id="RollOver5">
+<div id="wb_ylun_2025">
+<span style="color:#FFFFFF;">2025 Powered by Ylun Games.</span></div>
+<div id="wb_ylun_logo">
+<a href="https://ylungames.com"><img src="images/ylun_logo_about.png" id="ylun_logo" alt="" width="477" height="222"></a></div>
+<div id="ylun_x">
 <a href="https://x.com/ylungames" target="_blank">
-<img class="hover" alt="" src="images/x_icon2.png" width="33" height="34">
-<span><img alt="" src="images/x_icon.png" width="33" height="34"></span>
+<img class="hover" alt="" src="images/x_icon2.png" width="57" height="56">
+<span><img alt="" src="images/x_icon.png" width="57" height="56"></span>
 </a>
 </div>
-<div id="RollOver6">
-<a href="https://www.instagram.com/ylungames" target="_blank">
-<img class="hover" alt="" src="images/insta_icon2.png" width="33" height="34">
-<span><img alt="" src="images/insta_icon.png" width="33" height="34"></span>
-</a>
-</div>
-<div id="RollOver4">
+<div id="ylun_discord">
 <a href="https://discord.com/invite/S7cYURPDFA" target="_blank">
-<img class="hover" alt="" src="images/disc_icon2.png" width="33" height="34">
-<span><img alt="" src="images/disc_icon.png" width="33" height="34"></span>
+<img class="hover" alt="" src="images/disc_icon2.png" width="57" height="56">
+<span><img alt="" src="images/disc_icon.png" width="57" height="56"></span>
 </a>
 </div>
-<div id="wb_Text1">
-<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">All trademarks referenced herein are the properties of their respective owners.</span></div>
-<div id="RollOver8">
+<div id="ylun_blueskye">
 <a href="https://bsky.app/profile/ylungames.bsky.social" target="_blank">
-<img class="hover" alt="" src="images/blue_icon2.png" width="33" height="34">
-<span><img alt="" src="images/blue_icon.png" width="33" height="34"></span>
+<img class="hover" alt="" src="images/blue_icon2.png" width="57" height="56">
+<span><img alt="" src="images/blue_icon.png" width="57" height="56"></span>
 </a>
 </div>
 <div id="wb_TextMenu1">
 <span><a href="https://ylungames.com">Home</a></span><span><a href="./privacypolicy" title="Privacy Policy">Privacy Policy</a></span></div>
+<div id="wb_adriano_foto">
+<img src="images/ylun_team_1.png" id="adriano_foto" alt="" width="182" height="179"></div>
+<div id="adriano_x">
+<a href="https://x.com/AdrinoDev" target="_blank">
+<img class="hover" alt="" src="images/x_icon2.png" width="33" height="34">
+<span><img alt="" src="images/x_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="adriano_linkdin">
+<a href="https://www.linkedin.com/in/adrianoppaula" target="_blank">
+<img class="hover" alt="" src="images/linkdin_icon2.png" width="33" height="34">
+<span><img alt="" src="images/linkdin_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="adriano_email">
+<a href="adrinodev@gmail.com">
+<img class="hover" alt="" src="images/email_icon2.png" width="33" height="34">
+<span><img alt="" src="images/email_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="wb_cassio_foto">
+<img src="images/ylun_team_2.png" id="cassio_foto" alt="" width="182" height="179"></div>
+<div id="cassio_inst">
+<a href="https://www.instagram.com/peciole_cassio" target="_blank">
+<img class="hover" alt="" src="images/insta_icon2.png" width="33" height="34">
+<span><img alt="" src="images/insta_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="cassio_email">
+<a href="cassio.peciole@gmail.com">
+<img class="hover" alt="" src="images/email_icon2.png" width="33" height="34">
+<span><img alt="" src="images/email_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="wb_fabio_foto">
+<img src="images/ylun_team_3.png" id="fabio_foto" alt="" width="182" height="179"></div>
+<div id="fabio_email">
+<a href="fabiogalegokof@gmail.com">
+<img class="hover" alt="" src="images/email_icon2.png" width="33" height="34">
+<span><img alt="" src="images/email_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="wb_miguel_foto">
+<img src="images/ylun_team_4.png" id="miguel_foto" alt="" width="182" height="179"></div>
+<div id="miguel_insta">
+<a href="https://www.instagram.com/omiguelangeloo" target="_blank">
+<img class="hover" alt="" src="images/insta_icon2.png" width="33" height="34">
+<span><img alt="" src="images/insta_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="miguel_youtube">
+<a href="https://www.youtube.com/@OMiguelFernandezOfficial" target="_blank">
+<img class="hover" alt="" src="images/youtube_icon2.png" width="33" height="34">
+<span><img alt="" src="images/youtube_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="miguel_email">
+<a href="adrinodev@gmail.com">
+<img class="hover" alt="" src="images/email_icon2.png" width="33" height="34">
+<span><img alt="" src="images/email_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="wb_jp_foto">
+<img src="images/ylun_team_5.png" id="jp_foto" alt="" width="167" height="164"></div>
+<div id="ylun_insta">
+<a href="https://www.instagram.com/ylungames" target="_blank">
+<img class="hover" alt="" src="images/insta_icon2.png" width="57" height="56">
+<span><img alt="" src="images/insta_icon.png" width="57" height="56"></span>
+</a>
+</div>
+<div id="jp_insta">
+<a href="https://www.instagram.com/vieira.arte_" target="_blank">
+<img class="hover" alt="" src="images/insta_icon2.png" width="33" height="34">
+<span><img alt="" src="images/insta_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="jp_emai">
+<a href="adrinodev@gmail.com">
+<img class="hover" alt="" src="images/email_icon2.png" width="33" height="34">
+<span><img alt="" src="images/email_icon.png" width="33" height="34"></span>
+</a>
+</div>
+<div id="wb_Text4">
+<span style="color:#FFFFFF;">Google Pay is a trademark of Google LLC.</span></div>
+<div id="wb_Text1">
+<span style="color:#FFFFFF;">Breaking Gates is being developed by Ylun Games, a small group of developers from Brazil. Currently, the project is being run without any funding, and the team is responsible for all areas of the game, website, and updates.<br><br>It's a work done with a lot of dedication and care. And we are extremely grateful for the community's help; this has been the fuel that keeps the project alive and evolving every day.</span></div>
+<div id="wb_adriano_desc">
+<span style="color:#FFFFFF;">Responsible for programming, game design, and UX/UI. Oversees everything that brings the game to life, from combat and progression systems to menus and interfaces.</span></div>
+<div id="wb_adriano_title">
+<span style="color:#FFFFFF;"><strong>Adriano</strong></span></div>
+<div id="wb_cassio_text">
+<span style="color:#FFFFFF;"><strong>Cássio Peciole</strong></span></div>
+<div id="wb_cassio_desc">
+<span style="color:#FFFFFF;">Concept artist and animator. He brings each character, setting, and movement to life with his vibrant and energetic style.</span></div>
+<div id="wb_fabio_title">
+<span style="color:#FFFFFF;"><strong>Fabio Pessanha</strong></span></div>
+<div id="wb_fabio_desc">
+<span style="color:#FFFFFF;">Producer and QA manager. Ensures everything works well by testing the game, hunting for bugs, and helping to balance the team's wildest ideas.</span></div>
+<div id="wb_miguel_title">
+<span style="color:#FFFFFF;"><strong>Miguel Fernandez</strong></span></div>
+<div id="wb_miguel_desc">
+<span style="color:#FFFFFF;">Composer and music producer. He creates the soundtracks that accompany each battle, each exploration, and each epic moment in the game. With his talent and sensitivity, he transforms each scenario into a unique sonic experience!</span></div>
+<div id="wb_jp_title">
+<span style="color:#FFFFFF;"><strong>Pedro Vieira</strong></span></div>
+<div id="wb_jp_desc">
+<span style="color:#FFFFFF;">Illustrator responsible for all the artwork that gives the game world its identity.<br>Creating illustrations that capture the essence and energy of the adventure.</span></div>
+<div id="wb_Text2">
+<span style="color:#FFFFFF;">©2025 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</span></div>
 </div>
 </footer>
+<div id="DIV_SEGUIR">
+<div id="DIV_SEGUIR_Container">
+<div id="wb_Heading4">
+<h1 id="Heading4">Follow Breaking Gates</h1></div>
+<div id="RollOver1">
+<a href="https://x.com/breakinggates" target="_blank">
+<img class="hover" alt="" title="X" src="images/x_icone_maior2.png" width="105" height="104">
+<span><img alt="" title="X" src="images/x_icone_maior.png" width="105" height="104"></span>
+</a>
+</div>
+<div id="RollOver2">
+<a href="https://www.instagram.com/breakinggates" target="_blank">
+<img class="hover" alt="" title="Instagram" src="images/insta_icone_maior2.png" width="105" height="104">
+<span><img alt="" title="Instagram" src="images/insta_icone_maior.png" width="105" height="104"></span>
+</a>
+</div>
+<div id="RollOver3">
+<a href="https://bsky.app/profile/breakinggates.bsky.social" target="_blank">
+<img class="hover" alt="" title="BlueSkye" src="images/blue_icone_maior2.png" width="105" height="104">
+<span><img alt="" title="BlueSkye" src="images/blue_icone_maior.png" width="105" height="104"></span>
+</a>
+</div>
+<div id="RollOver4">
+<a href="https://discord.com/invite/S7cYURPDFA" target="_blank">
+<img class="hover" alt="" title="Discord" src="images/disc_icone_maior2.png" width="105" height="104">
+<span><img alt="" title="Discord" src="images/disc_icone_maior.png" width="105" height="104"></span>
+</a>
+</div>
+<button type="submit" id="ThemeableButton1" name="" value="ACCESS THE PRESS KIT" class="ui-button ui-corner-all">ACCESS THE PRESS KIT</button>
+<div id="wb_Text5">
+<span style="color:#4F4F4F;"><strong>If you'd like to talk about Breaking Gates, we've prepared a press kit packed with images, videos, and essential information about the game.</strong></span></div>
+</div>
+</div>
 <div id="Layer1">
-<div id="Layer1-overlay"></div>
 <div id="Layer1_Container">
 <div id="wb_Heading2">
 <h1 id="Heading2">Screenshots</h1></div>
@@ -140,7 +287,7 @@ $(document).ready(function()
 <div id="wb_Image2">
 <img src="images/bg_logo.png" id="Image2" alt="" width="386" height="246"></div>
 <div id="wb_Text3">
-<span style="color:#645600;">Mysterious portals appear everywhere, spreading a mysterious energy that affects all creatures. Find out who is responsible for all this and save the kingdom! Go on an adventure and discover what is hidden behind mysterious portals and powerful energy.</span></div>
+<span style="color:#4F4F4F;">Mysterious portals appear everywhere, spreading a mysterious energy that affects all creatures. Find out who is responsible for all this and save the kingdom! Go on an adventure and discover what is hidden behind mysterious portals and powerful energy.</span></div>
 <div id="RollOver9">
 <a href="https://store.steampowered.com/app/1248550/Breaking_Gates">
 <img class="hover" alt="" src="images/steam_botao2.png" width="193" height="61">
@@ -154,7 +301,7 @@ $(document).ready(function()
 </a>
 </div>
 <div id="wb_YouTube1">
-<iframe id="YouTube1" src="https://www.youtube.com/embed/KRMIw7PCMjs?si=lCu44x-5m7wq-r5D?rel=0&amp;modestbranding=1&amp;autohide=0&amp;fs=1" allowfullscreen></iframe>
+<iframe id="YouTube1" src="https://www.youtube.com/embed/0qZ6QdVL4Q0?rel=0&amp;modestbranding=1&amp;autohide=0&amp;fs=1" allowfullscreen></iframe>
 </div>
 </div>
 </div>

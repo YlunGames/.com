@@ -722,6 +722,26 @@ body
    border-radius: 0px;
    box-shadow: 0px 5px 5px #4F4F4F;
 }
+#lg_navbar
+{
+   background-color: rgba(103,58,31,0.80);
+   background-image: none;
+   border-radius: 0px;
+}
+#wb_title_banner_1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_title_banner_1 div
+{
+   text-align: center;
+}
 #wb_Text2 
 {
    background-color: transparent;
@@ -742,26 +762,6 @@ body
 #wb_Text2 div
 {
    text-align: justify;
-}
-#lg_navbar
-{
-   background-color: rgba(103,58,31,0.80);
-   background-image: none;
-   border-radius: 0px;
-}
-#wb_title_banner_1 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   border-radius: 0px;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_title_banner_1 div
-{
-   text-align: center;
 }
 #wb_Text5 
 {
@@ -1030,7 +1030,7 @@ body
    width: 28px;
    height: 28px;
    overflow: hidden;
-   z-index: 11;
+   z-index: 13;
 }
 #wb_CssMenu1
 {
@@ -1039,7 +1039,7 @@ body
    top: 15px;
    width: 620px;
    height: 39px;
-   z-index: 9;
+   z-index: 11;
 }
 #RollOver6
 {
@@ -1067,7 +1067,7 @@ body
    width: 28px;
    height: 28px;
    overflow: hidden;
-   z-index: 14;
+   z-index: 16;
 }
 #wb_OverlayMenu1
 {
@@ -1077,7 +1077,7 @@ body
    width: 56px;
    height: 49px;
    visibility: hidden;
-   z-index: 10;
+   z-index: 12;
 }
 #wb_Image1
 {
@@ -1086,7 +1086,7 @@ body
    top: 12px;
    width: 209px;
    height: 36px;
-   z-index: 8;
+   z-index: 10;
 }
 #RollOver4
 {
@@ -1125,7 +1125,7 @@ body
    top: 715px;
    width: 100%;
    height: 237px;
-   z-index: 24;
+   z-index: 17;
 }
 #wb_TextMenu1
 {
@@ -1161,7 +1161,7 @@ body
    width: 918px;
    height: 60px;
    text-align: center;
-   z-index: 15;
+   z-index: 8;
 }
 #Banner_1_Container
 {
@@ -1199,7 +1199,7 @@ body
    width: 918px;
    height: 396px;
    text-align: justify;
-   z-index: 26;
+   z-index: 9;
 }
 #lg_navbar
 {
@@ -1209,7 +1209,7 @@ body
    top: 0px;
    width: 100%;
    height: 62px;
-   z-index: 16;
+   z-index: 19;
 }
 #Banner_1
 {
@@ -1219,7 +1219,7 @@ body
    top: 0px;
    width: 100%;
    height: 714px;
-   z-index: 25;
+   z-index: 18;
 }
 #RollOver2
 {
@@ -1229,7 +1229,7 @@ body
    width: 28px;
    height: 28px;
    overflow: hidden;
-   z-index: 12;
+   z-index: 14;
 }
 #RollOver3
 {
@@ -1239,7 +1239,7 @@ body
    width: 28px;
    height: 28px;
    overflow: hidden;
-   z-index: 13;
+   z-index: 15;
 }
 @media only screen and (min-width: 1280px) and (max-width: 2699px)
 {
@@ -1462,22 +1462,6 @@ body
 {
    width: 1280px;
 }
-#wb_Text2
-{
-   left: 181px;
-   top: 273px;
-   width: 918px;
-   height: 393px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-size: 29px;
-   margin: 0;
-   padding: 0;
-   text-align: justify;
-}
 #lg_navbar
 {
    left: 0px;
@@ -1509,6 +1493,22 @@ body
 {
    margin: 0;
    padding: 0;
+}
+#wb_Text2
+{
+   left: 181px;
+   top: 273px;
+   width: 918px;
+   height: 393px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-size: 29px;
+   margin: 0;
+   padding: 0;
+   text-align: justify;
 }
 #wb_Text5
 {
@@ -1822,22 +1822,6 @@ body
 {
    width: 768px;
 }
-#wb_Text2
-{
-   left: 51px;
-   top: 345px;
-   width: 664px;
-   height: 528px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-size: 29px;
-   margin: 0;
-   padding: 0;
-   text-align: justify;
-}
 #lg_navbar
 {
    left: 0px;
@@ -1869,6 +1853,22 @@ body
 {
    margin: 0;
    padding: 0;
+}
+#wb_Text2
+{
+   left: 51px;
+   top: 345px;
+   width: 664px;
+   height: 528px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-size: 29px;
+   margin: 0;
+   padding: 0;
+   text-align: justify;
 }
 #wb_Text5
 {
@@ -2182,22 +2182,6 @@ body
 {
    width: 375px;
 }
-#wb_Text2
-{
-   left: 10px;
-   top: 345px;
-   width: 355px;
-   height: 792px;
-   visibility: visible;
-   display: inline;
-}
-#wb_Text2
-{
-   font-size: 29px;
-   margin: 0;
-   padding: 0;
-   text-align: justify;
-}
 #lg_navbar
 {
    left: 0px;
@@ -2229,6 +2213,22 @@ body
 {
    margin: 0;
    padding: 0;
+}
+#wb_Text2
+{
+   left: 10px;
+   top: 345px;
+   width: 355px;
+   height: 792px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   font-size: 29px;
+   margin: 0;
+   padding: 0;
+   text-align: justify;
 }
 #wb_Text5
 {
