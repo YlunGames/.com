@@ -1737,7 +1737,7 @@ body
 }
 #wb_ThemeableButton1
 {
-   border-radius: 10px;
+   border-radius: 5px;
    margin: 0;
    vertical-align: top;
 }
@@ -1760,13 +1760,13 @@ body
 }
 #wb_ThemeableButton1 .ui-corner-all, #wb_ThemeableButton1 .ui-corner-left
 {
-   border-bottom-left-radius: 10px;
-   border-top-left-radius: 10px;
+   border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px;
 }
 #wb_ThemeableButton1 .ui-corner-all, #wb_ThemeableButton1 .ui-corner-right
 {
-   border-bottom-right-radius: 10px;
-   border-top-right-radius: 10px;
+   border-bottom-right-radius: 5px;
+   border-top-right-radius: 5px;
 }
 #wb_ThemeableButton1 .ui-button
 {
