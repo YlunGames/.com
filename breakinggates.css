@@ -88,6 +88,12 @@ body
    border-left-color: #000000;
    border-radius: 0px;
 }
+#footer
+{
+   background-color: #844E28;
+   background-image: none;
+   border-radius: 0px;
+}
 #lg_rodape
 {
    background-color: transparent;
@@ -97,6 +103,7 @@ body
    background-attachment: scroll;
    background-size: cover;
    border-radius: 0px;
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #lg_rodape-overlay
 {
@@ -116,7 +123,7 @@ body
    background-attachment: scroll;
    background-size: cover;
    border-radius: 0px;
-   box-shadow: 0px 10px 15px rgba(79,79,79,0.12);
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #Layer1
 {
@@ -127,7 +134,7 @@ body
    background-attachment: scroll;
    background-size: cover;
    border-radius: 0px;
-   box-shadow: 0px 10px 15px rgba(79,79,79,0.13);
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #wb_ylun_2025 
 {
@@ -411,7 +418,7 @@ body
    background-attachment: scroll;
    background-size: cover;
    border-radius: 0px;
-   box-shadow: 0px 10px 15px rgba(79,79,79,0.12);
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #title-overlay
 {
@@ -1725,7 +1732,7 @@ body
 {
    font-family: Arial;
    font-weight: bold;
-   font-size: 27px;
+   font-size: 24px;
    font-style: normal;
    display: inline-block;
    position: relative;
@@ -1815,18 +1822,28 @@ body
    left: 1700px;
    top: 853px;
    width: 368px;
-   height: 214px;
-   z-index: 32;
+   height: 216px;
+   z-index: 33;
 }
 #ylun_x
 {
    position: absolute;
    left: 1101px;
-   top: 1524px;
+   top: 84px;
    width: 57px;
    height: 56px;
    overflow: hidden;
-   z-index: 2;
+   z-index: 5;
+}
+#footer
+{
+   position: absolute;
+   text-align: center;
+   left: 0px;
+   top: 3935px;
+   width: 100%;
+   height: 408px;
+   z-index: 51;
 }
 #jp_insta
 {
@@ -1836,7 +1853,7 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 21;
+   z-index: 23;
 }
 #miguel_youtube
 {
@@ -1846,7 +1863,7 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 17;
+   z-index: 20;
 }
 #lg_rodape_Container
 {
@@ -1864,7 +1881,7 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 11;
+   z-index: 14;
 }
 #adriano_x
 {
@@ -1874,7 +1891,7 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 7;
+   z-index: 10;
 }
 #wb_Image2
 {
@@ -1901,8 +1918,8 @@ body
    left: 1702px;
    top: 526px;
    width: 356px;
-   height: 107px;
-   z-index: 28;
+   height: 108px;
+   z-index: 29;
 }
 #wb_adriano_desc
 {
@@ -1910,18 +1927,18 @@ body
    left: 847px;
    top: 526px;
    width: 353px;
-   height: 161px;
-   z-index: 25;
+   height: 162px;
+   z-index: 26;
 }
 #wb_Text4
 {
    position: absolute;
    left: 628px;
-   top: 1797px;
+   top: 357px;
    width: 1441px;
    height: 23px;
    text-align: center;
-   z-index: 23;
+   z-index: 0;
 }
 #SlideShow2
 {
@@ -1948,8 +1965,8 @@ body
    left: 1700px;
    top: 790px;
    width: 370px;
-   height: 48px;
-   z-index: 31;
+   height: 49px;
+   z-index: 32;
 }
 #lg_rodape
 {
@@ -1958,18 +1975,18 @@ body
    left: 0px;
    top: 2502px;
    width: 100%;
-   height: 1855px;
-   z-index: 51;
+   height: 1438px;
+   z-index: 52;
 }
 #title
 {
    position: absolute;
    text-align: center;
-   left: 0%;
+   left: 0px;
    top: 0px;
    width: 100%;
    height: 645px;
-   z-index: 54;
+   z-index: 55;
 }
 #SlideShow2_back
 {
@@ -1995,7 +2012,7 @@ body
    top: 808px;
    width: 182px;
    height: 178px;
-   z-index: 15;
+   z-index: 18;
 }
 #wb_fabio_foto
 {
@@ -2004,7 +2021,7 @@ body
    top: 798px;
    width: 182px;
    height: 178px;
-   z-index: 13;
+   z-index: 16;
 }
 #cassio_email
 {
@@ -2014,7 +2031,7 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 12;
+   z-index: 15;
 }
 #adriano_email
 {
@@ -2024,16 +2041,16 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 9;
+   z-index: 12;
 }
 #wb_TextMenu1
 {
    position: absolute;
    left: 628px;
-   top: 1655px;
+   top: 215px;
    width: 1441px;
    height: 52px;
-   z-index: 5;
+   z-index: 3;
 }
 #wb_fabio_title
 {
@@ -2041,8 +2058,8 @@ body
    left: 847px;
    top: 791px;
    width: 356px;
-   height: 48px;
-   z-index: 29;
+   height: 49px;
+   z-index: 30;
 }
 #wb_cassio_text
 {
@@ -2050,8 +2067,8 @@ body
    left: 1702px;
    top: 459px;
    width: 356px;
-   height: 48px;
-   z-index: 27;
+   height: 49px;
+   z-index: 28;
 }
 #miguel_insta
 {
@@ -2061,7 +2078,7 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 16;
+   z-index: 19;
 }
 #fabio_email
 {
@@ -2071,7 +2088,7 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 14;
+   z-index: 17;
 }
 #SlideShow2_next
 {
@@ -2103,7 +2120,7 @@ body
    top: 134px;
    width: 868px;
    height: 189px;
-   z-index: 24;
+   z-index: 25;
 }
 #adriano_linkdin
 {
@@ -2113,7 +2130,15 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 8;
+   z-index: 11;
+}
+#footer_Container
+{
+   width: 2700px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   text-align: left;
 }
 #RollOver9
 {
@@ -2129,11 +2154,11 @@ body
 {
    position: absolute;
    left: 628px;
-   top: 1765px;
+   top: 325px;
    width: 1441px;
    height: 23px;
    text-align: center;
-   z-index: 35;
+   z-index: 1;
 }
 #wb_Text3
 {
@@ -2160,8 +2185,8 @@ body
    left: 847px;
    top: 1184px;
    width: 356px;
-   height: 161px;
-   z-index: 34;
+   height: 162px;
+   z-index: 35;
 }
 #wb_fabio_desc
 {
@@ -2169,8 +2194,8 @@ body
    left: 847px;
    top: 858px;
    width: 356px;
-   height: 134px;
-   z-index: 30;
+   height: 135px;
+   z-index: 31;
 }
 #jp_emai
 {
@@ -2181,57 +2206,57 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 22;
-}
-#ylun_insta
-{
-   position: absolute;
-   left: 1229px;
-   top: 1524px;
-   width: 57px;
-   height: 56px;
-   overflow: hidden;
-   z-index: 20;
-}
-#ylun_blueskye
-{
-   position: absolute;
-   left: 1375px;
-   top: 1524px;
-   width: 57px;
-   height: 56px;
-   overflow: hidden;
-   z-index: 4;
+   z-index: 24;
 }
 #ylun_discord
 {
    position: absolute;
    left: 1516px;
-   top: 1524px;
+   top: 84px;
    width: 57px;
    height: 56px;
    overflow: hidden;
-   z-index: 3;
+   z-index: 7;
+}
+#ylun_insta
+{
+   position: absolute;
+   left: 1239px;
+   top: 84px;
+   width: 57px;
+   height: 56px;
+   overflow: hidden;
+   z-index: 6;
+}
+#ylun_blueskye
+{
+   position: absolute;
+   left: 1389px;
+   top: 84px;
+   width: 57px;
+   height: 56px;
+   overflow: hidden;
+   z-index: 4;
 }
 #wb_ylun_2025
 {
    position: absolute;
    left: 628px;
-   top: 1732px;
+   top: 292px;
    width: 1440px;
    height: 23px;
    text-align: center;
-   z-index: 0;
+   z-index: 2;
 }
 #Layer1
 {
    position: absolute;
    text-align: center;
-   left: 0%;
+   left: 0px;
    top: 645px;
    width: 100%;
    height: 1323px;
-   z-index: 53;
+   z-index: 54;
 }
 #miguel_email
 {
@@ -2242,7 +2267,7 @@ body
    width: 33px;
    height: 34px;
    overflow: hidden;
-   z-index: 18;
+   z-index: 21;
 }
 #wb_cassio_foto
 {
@@ -2251,7 +2276,7 @@ body
    top: 466px;
    width: 182px;
    height: 178px;
-   z-index: 10;
+   z-index: 13;
 }
 #RollOver10
 {
@@ -2284,11 +2309,11 @@ body
 {
    position: absolute;
    text-align: center;
-   left: 0%;
+   left: 0px;
    top: 1966px;
    width: 100%;
    height: 548px;
-   z-index: 52;
+   z-index: 53;
 }
 #wb_adriano_title
 {
@@ -2296,8 +2321,8 @@ body
    left: 847px;
    top: 459px;
    width: 356px;
-   height: 48px;
-   z-index: 26;
+   height: 49px;
+   z-index: 27;
 }
 #RollOver2
 {
@@ -2315,8 +2340,8 @@ body
    left: 847px;
    top: 1117px;
    width: 356px;
-   height: 48px;
-   z-index: 33;
+   height: 49px;
+   z-index: 34;
 }
 #wb_adriano_foto
 {
@@ -2325,7 +2350,7 @@ body
    top: 466px;
    width: 182px;
    height: 178px;
-   z-index: 6;
+   z-index: 9;
 }
 #wb_YouTube1
 {
@@ -2361,7 +2386,7 @@ body
    top: 1154px;
    width: 167px;
    height: 163px;
-   z-index: 19;
+   z-index: 22;
 }
 #wb_ylun_logo
 {
@@ -2370,7 +2395,7 @@ body
    top: 99px;
    width: 477px;
    height: 212px;
-   z-index: 1;
+   z-index: 8;
 }
 @media only screen and (min-width: 1280px) and (max-width: 2699px)
 {
@@ -2395,13 +2420,30 @@ body
 #SlideShow2_next
 {
 }
+#footer
+{
+   left: 0px;
+   top: 3380px;
+   height: 257px;
+   visibility: visible;
+   display: block;
+}
+#footer
+{
+   width: 100%;
+}
+#footer_Container
+{
+   width: 1280px;
+}
 #lg_rodape
 {
    left: 0px;
-   top: 2294px;
-   height: 1466px;
+   top: 2285px;
+   height: 1096px;
    visibility: visible;
    display: block;
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #lg_rodape
 {
@@ -2414,7 +2456,7 @@ body
 #DIV_SEGUIR
 {
    left: 0px;
-   top: 1706px;
+   top: 1700px;
    height: 588px;
    visibility: visible;
    display: block;
@@ -2424,11 +2466,9 @@ body
    background-position: center bottom !important;
    background-attachment: scroll;
    background-size: cover;
-   box-shadow: 0px 10px 15px #4F4F4F;
 }
 #DIV_SEGUIR
 {
-   left: 0%;
    width: 100%;
 }
 #DIV_SEGUIR_Container
@@ -2448,11 +2488,10 @@ body
    background-position: center bottom !important;
    background-attachment: scroll;
    background-size: cover;
-   box-shadow: 0px 10px 15px #4F4F4F;
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #Layer1
 {
-   left: 0%;
    width: 100%;
 }
 #Layer1_Container
@@ -2462,7 +2501,7 @@ body
 #wb_ylun_2025
 {
    left: 50px;
-   top: 1364px;
+   top: 178px;
    width: 1183px;
    height: 18px;
    visibility: visible;
@@ -2488,8 +2527,8 @@ body
 }
 #ylun_x
 {
-   left: 563px;
-   top: 1154px;
+   left: 565px;
+   top: 45px;
    width: 33px;
    height: 34px;
    visibility: visible;
@@ -2497,8 +2536,8 @@ body
 }
 #ylun_insta
 {
-   left: 507px;
-   top: 1154px;
+   left: 509px;
+   top: 45px;
    width: 33px;
    height: 34px;
    visibility: visible;
@@ -2506,8 +2545,8 @@ body
 }
 #ylun_discord
 {
-   left: 672px;
-   top: 1155px;
+   left: 674px;
+   top: 46px;
    width: 33px;
    height: 32px;
    visibility: visible;
@@ -2531,8 +2570,8 @@ body
 }
 #ylun_blueskye
 {
-   left: 617px;
-   top: 1152px;
+   left: 619px;
+   top: 43px;
    width: 33px;
    height: 34px;
    visibility: visible;
@@ -2541,7 +2580,7 @@ body
 #wb_TextMenu1
 {
    left: 50px;
-   top: 1213px;
+   top: 109px;
    width: 1183px;
    height: 54px;
    visibility: visible;
@@ -2565,11 +2604,10 @@ body
    height: 634px;
    visibility: visible;
    display: block;
-   box-shadow: 0px 10px 15px #4F4F4F;
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #title
 {
-   left: 0%;
    width: 100%;
 }
 #title_Container
@@ -2736,7 +2774,7 @@ body
    left: 199px;
    top: 383px;
    width: 364px;
-   height: 49px;
+   height: 44px;
    visibility: visible;
    display: inline;
 }
@@ -2763,7 +2801,7 @@ body
    left: 821px;
    top: 380px;
    width: 438px;
-   height: 49px;
+   height: 44px;
    visibility: visible;
    display: inline;
 }
@@ -2779,7 +2817,7 @@ body
    left: 821px;
    top: 434px;
    width: 407px;
-   height: 67px;
+   height: 69px;
    visibility: visible;
    display: inline;
 }
@@ -2806,7 +2844,7 @@ body
    left: 199px;
    top: 643px;
    width: 395px;
-   height: 49px;
+   height: 44px;
    visibility: visible;
    display: inline;
 }
@@ -2822,7 +2860,7 @@ body
    left: 199px;
    top: 701px;
    width: 395px;
-   height: 89px;
+   height: 92px;
    visibility: visible;
    display: inline;
 }
@@ -2849,7 +2887,7 @@ body
    left: 821px;
    top: 643px;
    width: 438px;
-   height: 49px;
+   height: 44px;
    visibility: visible;
    display: inline;
 }
@@ -2865,7 +2903,7 @@ body
    left: 821px;
    top: 701px;
    width: 407px;
-   height: 134px;
+   height: 138px;
    visibility: visible;
    display: inline;
 }
@@ -2892,7 +2930,7 @@ body
    left: 199px;
    top: 881px;
    width: 395px;
-   height: 49px;
+   height: 44px;
    visibility: visible;
    display: inline;
 }
@@ -2908,7 +2946,7 @@ body
    left: 199px;
    top: 929px;
    width: 395px;
-   height: 112px;
+   height: 92px;
    visibility: visible;
    display: inline;
 }
@@ -3021,7 +3059,7 @@ body
 #wb_Text2
 {
    left: 50px;
-   top: 1392px;
+   top: 206px;
    width: 1183px;
    height: 18px;
    visibility: visible;
@@ -3037,7 +3075,7 @@ body
 #wb_Text4
 {
    left: 50px;
-   top: 1414px;
+   top: 228px;
    width: 1180px;
    height: 18px;
    visibility: visible;
@@ -3053,7 +3091,7 @@ body
 #wb_Heading4
 {
    left: 50px;
-   top: 36px;
+   top: 33px;
    width: 1178px;
    height: 68px;
    visibility: visible;
@@ -3153,7 +3191,7 @@ body
 }
 #ThemeableButton1
 {
-   font-size: 27px;
+   font-size: 24px;
 }
 #wb_ThemeableButton1 .ui-button
 {
@@ -3184,13 +3222,30 @@ body
 #SlideShow2_next
 {
 }
+#footer
+{
+   left: 0px;
+   top: 2898px;
+   height: 218px;
+   visibility: visible;
+   display: block;
+}
+#footer
+{
+   width: 100%;
+}
+#footer_Container
+{
+   width: 768px;
+}
 #lg_rodape
 {
    left: 0px;
-   top: 2204px;
-   height: 959px;
+   top: 2201px;
+   height: 697px;
    visibility: visible;
    display: block;
+   box-shadow: 0px 10px 15px rgba(79,79,79,0.12);
 }
 #lg_rodape
 {
@@ -3203,7 +3258,7 @@ body
 #DIV_SEGUIR
 {
    left: 0px;
-   top: 1729px;
+   top: 1725px;
    height: 477px;
    visibility: visible;
    display: block;
@@ -3213,11 +3268,9 @@ body
    background-position: center top !important;
    background-attachment: scroll;
    background-size: cover;
-   box-shadow: 0px 10px 15px rgba(79,79,79,0.12);
 }
 #DIV_SEGUIR
 {
-   left: 0%;
    width: 100%;
 }
 #DIV_SEGUIR_Container
@@ -3227,7 +3280,7 @@ body
 #Layer1
 {
    left: 0px;
-   top: 1076px;
+   top: 1072px;
    height: 655px;
    visibility: visible;
    display: block;
@@ -3237,11 +3290,10 @@ body
    background-position: center top !important;
    background-attachment: scroll;
    background-size: cover;
-   box-shadow: 0px 10px 15px rgba(79,79,79,0.12);
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #Layer1
 {
-   left: 0%;
    width: 100%;
 }
 #Layer1_Container
@@ -3251,7 +3303,7 @@ body
 #wb_ylun_2025
 {
    left: 50px;
-   top: 869px;
+   top: 131px;
    width: 668px;
    height: 16px;
    visibility: visible;
@@ -3278,7 +3330,7 @@ body
 #ylun_x
 {
    left: 276px;
-   top: 738px;
+   top: 30px;
    width: 33px;
    height: 34px;
    visibility: visible;
@@ -3287,7 +3339,7 @@ body
 #ylun_insta
 {
    left: 343px;
-   top: 738px;
+   top: 30px;
    width: 33px;
    height: 34px;
    visibility: visible;
@@ -3296,7 +3348,7 @@ body
 #ylun_discord
 {
    left: 461px;
-   top: 740px;
+   top: 32px;
    width: 33px;
    height: 32px;
    visibility: visible;
@@ -3307,7 +3359,7 @@ body
    left: 276px;
    top: 48px;
    width: 442px;
-   height: 184px;
+   height: 128px;
    visibility: visible;
    display: inline;
 }
@@ -3321,7 +3373,7 @@ body
 #ylun_blueskye
 {
    left: 408px;
-   top: 740px;
+   top: 32px;
    width: 33px;
    height: 32px;
    visibility: visible;
@@ -3330,7 +3382,7 @@ body
 #wb_TextMenu1
 {
    left: 50px;
-   top: 795px;
+   top: 87px;
    width: 670px;
    height: 38px;
    visibility: visible;
@@ -3354,11 +3406,10 @@ body
    height: 1074px;
    visibility: visible;
    display: block;
-   box-shadow: 0px 10px 15px #4F4F4F;
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #title
 {
-   left: 0%;
    width: 100%;
 }
 #title_Container
@@ -3509,7 +3560,7 @@ body
    left: 151px;
    top: 257px;
    width: 193px;
-   height: 96px;
+   height: 75px;
    visibility: visible;
    display: inline;
 }
@@ -3568,7 +3619,7 @@ body
    left: 504px;
    top: 257px;
    width: 217px;
-   height: 64px;
+   height: 60px;
    visibility: visible;
    display: inline;
 }
@@ -3611,7 +3662,7 @@ body
    left: 150px;
    top: 426px;
    width: 192px;
-   height: 80px;
+   height: 75px;
    visibility: visible;
    display: inline;
 }
@@ -3638,7 +3689,7 @@ body
    left: 504px;
    top: 391px;
    width: 217px;
-   height: 49px;
+   height: 29px;
    visibility: visible;
    display: inline;
 }
@@ -3654,7 +3705,7 @@ body
    left: 504px;
    top: 426px;
    width: 214px;
-   height: 96px;
+   height: 105px;
    visibility: visible;
    display: inline;
 }
@@ -3697,7 +3748,7 @@ body
    left: 151px;
    top: 584px;
    width: 192px;
-   height: 75px;
+   height: 90px;
    visibility: visible;
    display: inline;
 }
@@ -3810,7 +3861,7 @@ body
 #wb_Text2
 {
    left: 50px;
-   top: 890px;
+   top: 152px;
    width: 670px;
    height: 32px;
    visibility: visible;
@@ -3826,7 +3877,7 @@ body
 #wb_Text4
 {
    left: 52px;
-   top: 930px;
+   top: 192px;
    width: 667px;
    height: 16px;
    visibility: visible;
@@ -3942,7 +3993,7 @@ body
 }
 #ThemeableButton1
 {
-   font-size: 27px;
+   font-size: 24px;
 }
 #wb_ThemeableButton1 .ui-button
 {
@@ -3973,13 +4024,30 @@ body
 #SlideShow2_next
 {
 }
+#footer
+{
+   left: 0px;
+   top: 2898px;
+   height: 185px;
+   visibility: visible;
+   display: block;
+}
+#footer
+{
+   width: 100%;
+}
+#footer_Container
+{
+   width: 375px;
+}
 #lg_rodape
 {
    left: 0px;
    top: 1901px;
-   height: 1228px;
+   height: 997px;
    visibility: visible;
    display: block;
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #lg_rodape
 {
@@ -4002,11 +4070,9 @@ body
    background-position: center top !important;
    background-attachment: scroll;
    background-size: cover;
-   box-shadow: 0px 10px 15px rgba(79,79,79,0.12);
 }
 #DIV_SEGUIR
 {
-   left: 0%;
    width: 100%;
 }
 #DIV_SEGUIR_Container
@@ -4026,11 +4092,10 @@ body
    background-position: center top !important;
    background-attachment: scroll;
    background-size: cover;
-   box-shadow: 0px 10px 15px rgba(79,79,79,0.12);
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #Layer1
 {
-   left: 0%;
    width: 100%;
 }
 #Layer1_Container
@@ -4040,7 +4105,7 @@ body
 #wb_ylun_2025
 {
    left: 10px;
-   top: 1161px;
+   top: 125px;
    width: 354px;
    height: 10px;
    visibility: visible;
@@ -4067,27 +4132,27 @@ body
 #ylun_x
 {
    left: 77px;
-   top: 1065px;
-   width: 33px;
-   height: 34px;
+   top: 28px;
+   width: 28px;
+   height: 28px;
    visibility: visible;
    display: inline;
 }
 #ylun_insta
 {
    left: 144px;
-   top: 1065px;
-   width: 33px;
-   height: 34px;
+   top: 28px;
+   width: 28px;
+   height: 28px;
    visibility: visible;
    display: inline;
 }
 #ylun_discord
 {
    left: 262px;
-   top: 1067px;
-   width: 33px;
-   height: 32px;
+   top: 28px;
+   width: 28px;
+   height: 28px;
    visibility: visible;
    display: inline;
 }
@@ -4110,16 +4175,16 @@ body
 #ylun_blueskye
 {
    left: 209px;
-   top: 1067px;
-   width: 33px;
-   height: 32px;
+   top: 28px;
+   width: 28px;
+   height: 28px;
    visibility: visible;
    display: inline;
 }
 #wb_TextMenu1
 {
    left: 9px;
-   top: 1114px;
+   top: 87px;
    width: 354px;
    height: 28px;
    visibility: visible;
@@ -4143,11 +4208,10 @@ body
    height: 1074px;
    visibility: visible;
    display: block;
-   box-shadow: 0px 10px 15px rgba(79,79,79,0.12);
+   box-shadow: 0px 10px 10px rgba(79,79,79,0.20);
 }
 #title
 {
-   left: 0%;
    width: 100%;
 }
 #title_Container
@@ -4298,7 +4362,7 @@ body
    left: 110px;
    top: 297px;
    width: 256px;
-   height: 65px;
+   height: 52px;
    visibility: visible;
    display: inline;
 }
@@ -4400,7 +4464,7 @@ body
    left: 111px;
    top: 596px;
    width: 253px;
-   height: 52px;
+   height: 39px;
    visibility: visible;
    display: inline;
 }
@@ -4470,7 +4534,7 @@ body
    left: 110px;
    top: 869px;
    width: 256px;
-   height: 49px;
+   height: 24px;
    visibility: visible;
    display: inline;
 }
@@ -4599,7 +4663,7 @@ body
 #wb_Text2
 {
    left: 11px;
-   top: 1176px;
+   top: 140px;
    width: 354px;
    height: 20px;
    visibility: visible;
@@ -4615,7 +4679,7 @@ body
 #wb_Text4
 {
    left: 11px;
-   top: 1200px;
+   top: 164px;
    width: 354px;
    height: 10px;
    visibility: visible;
