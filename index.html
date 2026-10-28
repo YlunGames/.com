@@ -28,7 +28,6 @@
 <script src="jquery-3.7.1.min.js"></script>
 <script src="wb.overlay.min.js"></script>
 <script src="wb.drilldownmenu.min.js"></script>
-<script src="wwb19.min.js"></script>
 <script>
 $(document).ready(function()
 {
@@ -39,11 +38,6 @@ $(document).ready(function()
       $.overlay.toggle($('#OverlayMenu1-overlay'));
       return false;
    });
-   $(window).on('resize', function()
-   {
-      ResponsiveVideo('bg_banner-video');
-   });
-   ResponsiveVideo('bg_banner-video');
 });
 </script>
 </head>
@@ -99,7 +93,6 @@ $(document).ready(function()
 </div>
 </main>
 <main id="bg_banner">
-<div id="bg_banner-video"><iframe src="https://www.youtube.com/embed/0qZ6QdVL4Q0?si=gO9Qo0dXKYfmx-wz&controls=0&showinfo=0&rel=0&autoplay=1&mute=1&loop=1&playlist=0qZ6QdVL4Q0" frameborder="0" allowfullscreen></iframe></div>
 <div id="bg_banner-overlay"></div>
 <div id="bg_banner_Container">
 <div id="wb_ThemeableButton2">
